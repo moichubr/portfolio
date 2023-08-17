@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #240046, #ff0072, #ff8c00);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+@layer base {
+  .landing-content {
+    height: 50vw;
+    width: 100vw;
+    max-width: 100vw;
+    position: relative;
+
+}
+.corner-text {
+  position: absolute;
+  bottom: 8%; /* Ajusta según tu preferencia */
+  left: 5%; /* Ajusta según tu preferencia */
+  text-align: left;
+  max-width: fit-content;
+
+}
+
+@media (min-width: 768px) {
+  /* Ajustes para pantallas más grandes, por ejemplo, tablets */
+  .corner-text {
+    bottom: 20vw;
+    left: 20vw;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  /* Ajustes para pantallas más grandes, por ejemplo, pantallas de escritorio */
+  .corner-text {
+    bottom: 16vw;
+    left: 18vw;
+    font-size: 20px;
+  }
+}
 }
