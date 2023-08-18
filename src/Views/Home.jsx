@@ -4,6 +4,7 @@ import Projects from "../Components/Projects";
 const Home = () => {
 
     return(
+        
         <div className="h-screen">
         <div class="landing-content">
             <div class="corner-text">

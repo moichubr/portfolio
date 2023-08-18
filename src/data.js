@@ -11,6 +11,7 @@ const myProjects = [
         video:"https://www.youtube.com/watch?v=l1Snp-dxvh0",
         
     },
+    
     {
         name:"FOODYAPP",
         date:"JUNE 2023 (30 DAYS)",
