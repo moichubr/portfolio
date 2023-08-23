@@ -20,7 +20,7 @@ export const myProjects = [
     {
         name:"FOODYAPP",
         date:"JUNE 2023",
-        description: "This useful app works as a recipe book where user can find over +100 recipes, create there own ones an delete them if wanted. Also, can look up for a recipe by its name or by keyword, filter them by diet type and sort them alphabetically or by health score.",
+        description: "This useful app, completely responsive, works as a recipe book where user can find over +100 recipes, create there own ones an delete them if wanted. Also, can look up for a recipe by its name or by keyword, filter them by diet type and sort them alphabetically or by health score.",
         technologies:["React", "Redux", "CSS3", "HTML5", "PostgreSQL", "Sequelize", "Express", "Axios"],
         image: foody,
         deploy:"",
