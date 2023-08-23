@@ -50,25 +50,28 @@ const Projects = () => {
                 </div>
               </div>
             <div className="text-white justify-center flex mt-2">
+              {
+                project.video ? (
           <div className="mr-4">
             <a href={project.video} title="Presentation video">
             <FaYoutube className="text-2xl"/>
             </a>
           </div>
+                ) : null
+              }
           <div className="mr-4">
             <a href={project.repository} title="Repository">
             <FaGithub className="text-2xl"/>
             </a>
           </div>
 
-          <div className="mr-4">
-            {project.deploy ?
-           ( <a href={project.deploy} title="Deployment">
+            { project.deploy ?
+          (<div className="mr-4">
+           <a href={project.deploy} title="Deployment">
             <CgWebsite className="text-2xl"/>
-            </a>)
-            : null  
+            </a>
+          </div>) :  null 
         }
-          </div>
 
             </div>
             </a>

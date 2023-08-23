@@ -1,5 +1,5 @@
 import wanderlust from "./assets/portada.jpg"
-import foody from "./assets/home.jpg"
+import foody from "./assets/foody_landing.jpg"
 import homerym from "./assets/landing.png"
 import { FaReact, FaNodeJs } from "react-icons/fa"
 import { SiRedux, SiJavascript, SiHtml5, SiCss3, SiExpress, SiPostgresql, SiTailwindcss, SiSequelize } from "react-icons/si"
