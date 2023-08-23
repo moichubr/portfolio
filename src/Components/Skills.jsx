@@ -10,7 +10,7 @@ const Skills = () => {
         <div className="text-center mb-20">
           <BsTools className="w-10 inline-block mb-4 text-gray-400 text-2xl" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
-            Skills and technologies
+            Skills & Technologies
           </h1>
           <p className="text-base text-white leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
           Because of mi curiosity and interest on the latest technologies, I'm looking for enhancing my skills practicing and researching about new develop tools to achive a high-quality product.
