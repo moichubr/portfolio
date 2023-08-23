@@ -19,18 +19,18 @@ export const myProjects = [
     
     {
         name:"FOODYAPP",
-        date:"JUNE 2023 (30 DAYS)",
+        date:"JUNE 2023",
         description: "This useful app works as a recipe book where user can find over +100 recipes, create there own ones an delete them if wanted. Also, can look up for a recipe by its name or by keyword, filter them by diet type and sort them alphabetically or by health score.",
         technologies:["React", "Redux", "CSS3", "HTML5", "PostgreSQL", "Sequelize", "Express", "Axios"],
         image: foody,
         deploy:"",
         repository:"https://github.com/moichubr/foodyApp",
-        video:"",
+        video:"https://youtu.be/wDCsNpNwHAo",
         
     },
     {
         name:"Rick and Morty",
-        date:"JUNE 2023 (30 DAYS)",
+        date:"MAY 2023",
         description: "This is an academic project I developed to apply all the learned technologies during bootcamp such as React, Redux, CSS3, Express, Sequelize, PostgreSQL. In this app user can search and filter over +750 Rick and Morty's serie characters, save their favs and delete them if wanted.",
         technologies:["React", "Redux", "CSS3", "HTML5", "PostgreSQL", "Sequelize", "Express", "Axios"],
         image: homerym,
