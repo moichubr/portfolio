@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
-import validate from "./ContactValidation";
+// import validate from "./ContactValidation";
 
 const Contact = () => {
   const [contactData, setContactData] = useState({
@@ -11,11 +11,11 @@ const Contact = () => {
     message: "",
   });
 
-  const [errors, setErrors] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  // const [errors, setErrors] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
 
   const handleInputChange = (e) => {
     e.preventDefault();
@@ -25,12 +25,12 @@ const Contact = () => {
       [e.target.name]: e.target.value,
     });
 
-    setErrors(
-      validate({
-        ...contactData,
-        [e.target.name]: e.target.value,
-      })
-    );
+    // setErrors(
+    //   validate({
+    //     ...contactData,
+    //     [e.target.name]: e.target.value,
+    //   })
+    // );
   };
 
   return (
@@ -96,11 +96,11 @@ const Contact = () => {
               onChange={handleInputChange}
               className="w-full bg-gray-200 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
-            {errors.name ? (
+            {/* {errors.name ? (
               <span className="text-indigo-950 text-s">
                 <b>{errors.name}</b>
               </span>
-            ) : null}
+            ) : null} */}
           </div>
           <div className="relative mb-4">
             <label htmlFor="email" className="leading-7 text-sm text-gray-400">
@@ -114,11 +114,11 @@ const Contact = () => {
               onChange={handleInputChange}
               className="w-full bg-gray-100 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
-            {errors.email ? (
+            {/* {errors.email ? (
               <span className="text-indigo-950">
                 <b>{errors.email}</b>
               </span>
-            ) : null}
+            ) : null} */}
           </div>
           <div className="relative mb-4">
             <label
@@ -134,20 +134,20 @@ const Contact = () => {
               onChange={handleInputChange}
               className="w-full bg-gray-100 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-800 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             />
-            {errors.message ? (
+            {/* {errors.message ? (
               <span className="text-indigo-950">
                 <b>{errors.message}</b>
               </span>
-            ) : null}
+            ) : null} */}
           </div>
-          {!errors.length ? (
+          {/* {!errors.length ? ( */}
             <button
               type="submit"
               className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
             >
               Send
             </button>
-          ) : window.alert("Check the provided information")}
+          {/* ) : window.alert("Check the provided information")} */}
           <input
             type="hidden"
             name="_next"
