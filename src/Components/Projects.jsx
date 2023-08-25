@@ -14,7 +14,7 @@ const Projects = () => {
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Projects I developed
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-white text-base">
             Here's some of my main projects that I developed by myself and in collaboration with collegues, applying the agile <b>SCRUM</b> method. I'm always ready and motivated to start new challenges! I'm strongly result-oriented: love designing, creating and materializing solutions for each particular case. Give client the <em>best experience</em> is my goal.
           </p>
         </div>
@@ -82,27 +82,6 @@ const Projects = () => {
     </section>
 
 
-        // <div className="w-full flex flex-col align-center">
-        //     {myProjects?.map((el, index) => {
-        //         return (
-        //             <div key={index} className="w-2/3 text-left">
-        //                 <img src={el.image} alt={el.name} />
-        //                 <p>{el.name}</p>
-        //                 <p>{el.date}</p>
-        //                 <p>{el.description}</p>
-        //                 <p>Technologies:</p>
-        //                 <ul>
-        //                 {el.technologies?.map((el, index) => {
-        //                     return (
-        //                         <li key={index}>{el}</li>
-        //                     )
-        //                 })}
-        //                 </ul>
-        //             </div>
-        //         )
-        //     }   
-        //     )}
-        // </div>
     )
 }
 

@@ -13,7 +13,7 @@ export const myProjects = [
         image: wanderlust,
         deploy:"https://wanderlust-phi.vercel.app",
         repository:"https://github.com/Wanderlust-8/wanderlust",
-        video:"https://www.youtube.com/watch?v=l1Snp-dxvh0",
+        video:"https://www.youtube.com/watch?v=zCYnhixTC0c",
         
     },
     
@@ -84,6 +84,15 @@ export const skills = [{
     icon: <SiSequelize className="mr-2"  />
 }
 ]
+
+export const certificates = [{
+    title: "FullStack Web Developer",
+    img: "https://certificates.soyhenry.com/new-cert?id=fc82790c32b4cfb3e91273ff4c79bb901d819590c8b2d970804f60552b00f986"
+},
+{
+    title: "English C2 Proficient",
+    img: "https://www.efset.org/cert/KqDFiw"
+}]
 
 
 
