@@ -6,7 +6,7 @@
         "op4": "Contact me!"
     },
     "about": {
-        "welcome": "Welcome",
+        "welcome": "Welcome!",
         "iam": "I'm Moira Brun",
         "role": "Full Stack web developer",
         "description": "Committed to delivering user-centric experiences, I excel in both frontend and backend development, ensuring seamless functionality and dynamic interactions applying modern web developing technologies. Eager to contribute my expertise and drive to innovative projects, I am enthusiastic about collaborating with teams that share a common goal of generating a positive impact.",
@@ -32,6 +32,20 @@
         "message":"Message",
         "location":"BASED IN",
         "button":"Send"
+    },
+    "footer":{
+        "title": "Developed with React by"
+    },
+    "projectsdata":{
+        "1":{
+            "description":"This innovative e-commerce platform connects travelers with a top-tier travel agency, offering curated packages to the world's most iconic destinations. Can tailor the adventure by adding personalized activities to the itinerary, ensuring your journey will be unique."
+        },
+        "2":{
+            "description":"This useful app, completely responsive, works as a recipe book where user can find over +100 recipes, create there own ones an delete them if wanted. Also, can look up for a recipe by its name or by keyword, filter them by diet type and sort them alphabetically or by health score."
+        },
+        "3":{
+            "description":"This is an academic project I developed to apply all learned technologies during bootcamp such as React, Redux, CSS3, Express, Sequelize, PostgreSQL. In this app user can search and filter over +750 Rick and Morty's serie characters, save their favs and delete them if wanted."
+        }
     }
 
 }

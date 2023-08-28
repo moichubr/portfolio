@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import {I18nextProvider} from "react-i18next";
+import {I18nextProvider} from "react-i18next"; //para que las traducciones esten disponibles en toda la app
 import i18next from "i18next";
 import global_es from "./Translations/es/global.json"
 import global_en from "./Translations/en/global.json"

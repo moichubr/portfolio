@@ -3,10 +3,10 @@
         "op1": "PROYECTOS",
         "op2": "TECNOLOGÍAS",
         "op3": "CERTIFICADOS",
-        "op4": "Contactame"
+        "op4": "Contactame!"
     },
     "about": {
-        "welcome": "Bienvenido",
+        "welcome": "Te doy la bienvenida!",
         "iam": "Soy Moira Brun",
         "role": "Desarrolladora Web Full Stack",
         "description": "Mi compromiso se encuentra en brindar experiencias centradas en el usuario. Me destaco tanto en el desarrollo frontend como backend, garantizando una funcionalidad perfecta e interacciones dinámicas aplicando tecnologías modernas de desarrollo web. Tengo una gran motivación por poder aportar mi experiencia e impulso a proyectos innovadores. Me entusiasma poder colaborar con equipos con quienes tenga el objetivo común de generar un impacto positivo.",
@@ -32,5 +32,19 @@
         "message":"Mensaje",
         "location":"UBICADA EN",
         "button":"Enviar"
+    },
+    "footer":{
+        "title": "Desarrollado con React por"
+    },
+    "projectsdata":{
+        "1":{
+            "description":"Esta innovadora plataforma de comercio electrónico conecta a los viajeros con una agencia de viajes de primer nivel y ofrece paquetes seleccionados a los destinos más emblemáticos del mundo. Puede hacer propia la aventura agregando actividades personalizadas al itinerario, asegurando que su viaje sea único."
+        },
+        "2":{
+            "description":"Esta útil aplicación, completamente responsiva, funciona como un libro de recetas donde el usuario puede encontrar más de 100 recetas, crear sus propias recetas y eliminarlas si lo desea. Además, puede buscar una receta por su nombre o por palabra clave, filtrarlas por tipo de dieta y ordenarlas alfabéticamente o por puntuación de salud."
+        },
+        "3":{
+            "description":"Este es un proyecto académico que desarrollé para aplicar todas las tecnologías aprendidas durante el bootcamp como React, Redux, CSS3, Express, Sequelize, PostgreSQL. En esta aplicación el usuario puede buscar y filtrar más de 750 personajes de la serie Rick y Morty, guardar sus favoritos y eliminarlos si lo desea."
+        }
     }
 }

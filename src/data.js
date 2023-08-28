@@ -7,6 +7,7 @@ import { SiRedux, SiJavascript, SiHtml5, SiCss3, SiExpress, SiPostgresql, SiTail
 export const myProjects = [
     {
         name:"WANDERLUST",
+        id:"1",
         date:"AGUST 2023",
         description:"This innovative e-commerce platform connects travelers with a top-tier travel agency, offering curated packages to the world's most iconic destinations. Can tailor the adventure by adding personalized activities to the itinerary, ensuring your journey will be unique.",
         technologies:["React", "Redux", "TailwindCSS", "HTML5", "Firebase", "PostgreSQL", "Sequelize", "Express", "Cloudinary", "Nodemailer", "Axios", "Vercel", "Railway"],
@@ -19,6 +20,7 @@ export const myProjects = [
     
     {
         name:"FOODYAPP",
+        id:"2",
         date:"JUNE 2023",
         description: "This useful app, completely responsive, works as a recipe book where user can find over +100 recipes, create there own ones an delete them if wanted. Also, can look up for a recipe by its name or by keyword, filter them by diet type and sort them alphabetically or by health score.",
         technologies:["React", "Redux", "CSS3", "HTML5", "PostgreSQL", "Sequelize", "Express", "Axios"],
@@ -30,6 +32,7 @@ export const myProjects = [
     },
     {
         name:"RICK AND MORTY",
+        id:"3",
         date:"MAY 2023",
         description: "This is an academic project I developed to apply all the learned technologies during bootcamp such as React, Redux, CSS3, Express, Sequelize, PostgreSQL. In this app user can search and filter over +750 Rick and Morty's serie characters, save their favs and delete them if wanted.",
         technologies:["React", "Redux", "CSS3", "HTML5", "PostgreSQL", "Sequelize", "Express", "Axios"],

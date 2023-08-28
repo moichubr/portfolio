@@ -37,7 +37,7 @@ const Projects = () => {
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                  
-                  <p className="leading-relaxed">{project.description}</p>
+                  <p className="leading-relaxed">{t(`projectsdata.${project.id}.description`)}</p>
 
                 <h2 className="text-sm title-font font-medium text-green-400 mb-1">
                 {t('projects.stack')}
