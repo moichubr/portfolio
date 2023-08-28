@@ -1,0 +1,19 @@
+{
+    "navbar": {
+        "op1": "PROYECTOS",
+        "op2": "TECNOLOGÍAS",
+        "op3": "CERTIFICADOS",
+        "op4": "Contactame"
+    },
+    "about": {
+        "welcome": "Bienvenido",
+        "iam": "Soy Moira Brun",
+        "role": "Desarrolladora Web Full Stack",
+        "description": "Mi compromiso se encuentra en brindar experiencias centradas en el usuario. Me destaco tanto en el desarrollo frontend como backend, garantizando una funcionalidad perfecta e interacciones dinámicas aplicando tecnologías modernas de desarrollo web. Tengo una gran motivación por poder aportar mi experiencia e impulso a proyectos innovadores. Me entusiasma poder colaborar con equipos con quienes tenga el objetivo común de generar un impacto positivo.",
+        "button1": "Coordina una entrevista",
+        "button2": "Mira mis proyectos"
+        },
+    "projects":{
+        
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "navbar": {
+        "op1": "PROJECTS",
+        "op2": "SKILLS",
+        "op3": "CERTIFICATES",
+        "op4": "Contact me!"
+    },
+    "about": {
+        "welcome": "Welcome",
+        "iam": "I'm Moira Brun",
+        "role": "Full Stack web developer",
+        "description": "Committed to delivering user-centric experiences, I excel in both frontend and backend development, ensuring seamless functionality and dynamic interactions applying modern web developing technologies. Eager to contribute my expertise and drive to innovative projects, I am enthusiastic about collaborating with teams that share a common goal of generating a positive impact.",
+        "button1": "Coordinate a meeting",
+        "button2": "Take a look at my projects"
+    }
+}

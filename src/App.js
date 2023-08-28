@@ -1,3 +1,4 @@
+import React, {Suspense} from 'react';
 import './App.css';
 
 import Landing from './Components/Landing';
@@ -8,9 +9,11 @@ import Contact from './Components/Contact'
 import Certificates from './Components/Certificates';
 import Footer from './Components/Footer'
 
+
 function App() {
 
   return (
+    <Suspense fallback="loading...">
     <div className="App md:w-auto lg:w-full">
       <Navbar />
       <Landing />
@@ -20,6 +23,7 @@ function App() {
       <Contact />
       <Footer />
     </div>
+    </Suspense>
   );
 }
 
