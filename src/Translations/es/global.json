@@ -14,6 +14,8 @@
         "button2": "Mira mis proyectos"
         },
     "projects":{
-        
+            "title": "Proyectos",
+            "description":"En esta sección se encuentran algunos de mis principales proyectos. Algunos de ellos desarrollé de manera full stack, y otros fueron en colaboración con colegas aplicando el método ágil SCRUM. Siempre estoy lista y motivada a comenzar nuevos desafíos! Tengo una muy fuerte orientación a los resultados considerando al usuario: me encanta diseñar, crear y materializar soluciones para cada caso particular. Darle al cliente la mejor experiencia es mi objetivo.",
+            "stack":"Stack de tecnologías:"
     }
 }

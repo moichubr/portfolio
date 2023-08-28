@@ -2,9 +2,11 @@ import React from "react";
 import {myProjects} from "../data";
 import {FaCode, FaYoutube, FaGithub} from "react-icons/fa"
 import {CgWebsite} from "react-icons/cg"
+import { useTranslation } from 'react-i18next';
 
 
 const Projects = () => {
+  const {t} = useTranslation("global")
 
     return(
         <section id="projects" className="text-gray-400 body-font mt-1">
@@ -12,10 +14,10 @@ const Projects = () => {
         <div className="flex flex-col w-full mb-20">
           <FaCode className="mx-auto inline-block w-10 mb-4 text-2xl" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            Projects I developed
+            {t('projects.title')}
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-white text-base">
-            Here's some of my main projects that I developed by myself and in collaboration with collegues, applying the agile <b>SCRUM</b> method. I'm always ready and motivated to start new challenges! I'm strongly result-oriented: love designing, creating and materializing solutions for each particular case. Give client the <em>best experience</em> is my goal.
+          {t('projects.description')}
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
@@ -38,7 +40,7 @@ const Projects = () => {
                   <p className="leading-relaxed">{project.description}</p>
 
                 <h2 className="text-sm title-font font-medium text-green-400 mb-1">
-                    Technologies stack:
+                {t('projects.stack')}
                         <div>
                         {project.technologies?.map((el, index) => {
                             return (

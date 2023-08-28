@@ -12,5 +12,10 @@
         "description": "Committed to delivering user-centric experiences, I excel in both frontend and backend development, ensuring seamless functionality and dynamic interactions applying modern web developing technologies. Eager to contribute my expertise and drive to innovative projects, I am enthusiastic about collaborating with teams that share a common goal of generating a positive impact.",
         "button1": "Coordinate a meeting",
         "button2": "Take a look at my projects"
+    },
+    "projects":{
+        "title": "Projects",
+        "description":"Here's some of my main projects that I developed by myself and in collaboration with collegues, applying the agile SCRUM method. I'm always ready and motivated to start new challenges! I'm strongly result-oriented: love designing, creating and materializing solutions for each particular case. Give client the best experience is my goal.",
+        "stack":"Technologies stack:"
     }
 }
