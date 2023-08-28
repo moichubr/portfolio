@@ -1,13 +1,16 @@
 import React from "react";
 import {PiCertificate} from "react-icons/pi"
 import { certificates } from "../data";
+import { useTranslation } from "react-i18next";
 
 const Certificates = () => {
+  const {t} = useTranslation("global")
+
   return (
     <section id="certificates">
       <div className="text-white text-center container px-5 py-10 mx-auto">
         <PiCertificate className="w-10 inline-block mb-4 text-gray-400 text-5xl"/>
-        <p className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">Certificates</p>
+        <p className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">{t("certificates.title")}</p>
         <div className="mt-4 justify-center items-center">
             
         <div className="flex justify-center items-center">

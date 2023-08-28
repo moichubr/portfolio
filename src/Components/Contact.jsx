@@ -2,9 +2,11 @@ import React from "react";
 import { useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
+import { useTranslation } from "react-i18next";
 // import validate from "./ContactValidation";
 
 const Contact = () => {
+  const {t} = useTranslation("global")
   const [contactData, setContactData] = useState({
     name: "",
     email: "",
@@ -48,7 +50,7 @@ const Contact = () => {
           <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md p-2">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                BASED IN
+                {t('contact.location')}
               </h2>
               <p className="mt-1 text-white">Entre Ríos, Argentina</p>
             </div>
@@ -78,15 +80,14 @@ const Contact = () => {
           className="lg:w-1/3 lg:mr-36 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-            Contact me
+          {t('contact.title')}
           </h2>
           <p className="text-white mb-5">
-            If you are looking for someone committed, with a positive attitude
-            and eager to join a work team to generate a positive impact.
+            {t('contact.description')}
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
-              Name
+            {t('contact.name')}
             </label>
             <input
               type="text"
@@ -125,7 +126,7 @@ const Contact = () => {
               htmlFor="message"
               className="leading-7 text-sm text-gray-400"
             >
-              Message
+              {t('contact.message')}
             </label>
             <textarea
               id="message"
@@ -145,7 +146,7 @@ const Contact = () => {
               type="submit"
               className="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
             >
-              Send
+              {t('contact.button')}
             </button>
           {/* ) : window.alert("Check the provided information")} */}
           <input

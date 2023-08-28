@@ -17,5 +17,20 @@
             "title": "Proyectos",
             "description":"En esta sección se encuentran algunos de mis principales proyectos. Algunos de ellos desarrollé de manera full stack, y otros fueron en colaboración con colegas aplicando el método ágil SCRUM. Siempre estoy lista y motivada a comenzar nuevos desafíos! Tengo una muy fuerte orientación a los resultados considerando al usuario: me encanta diseñar, crear y materializar soluciones para cada caso particular. Darle al cliente la mejor experiencia es mi objetivo.",
             "stack":"Stack de tecnologías:"
+    },
+    "skills":{
+        "title":"Habilidades & Tecnologías",
+        "description":"Debido a mi curiosidad e interés en las últimas tecnologías, busco potenciar y mejorar mis habilidades con la práctica e investigando también sobre nuevas herramientas de desarrollo para lograr productos y soluciones de alta calidad."
+    },
+    "certificates":{
+        "title":"Certificados"
+    },
+    "contact":{
+        "title":"Contactame",
+        "description":"Si estas buscando a una persona con actitud positiva, comprometida y lista para unirse a un equipo de trabajo para generar impacto.",
+        "name":"Nombre",
+        "message":"Mensaje",
+        "location":"UBICADA EN",
+        "button":"Enviar"
     }
 }
