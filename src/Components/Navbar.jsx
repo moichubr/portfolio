@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <header className="bg-indigo-950 md:sticky top-0 z-10">
-      <div className="container relative mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <div className="container relative mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center max-w-full">
         <a
           href="#about"
           className="ml-3 text-xl title-font font-medium text-white mb-4 md:mb-0"
@@ -28,8 +28,25 @@ const Navbar = () => {
           <a href="#certificates" className="mr-5 text-white hover:font-bold">
             {t("navbar.op3")}
           </a>
-          <div className="md:mt-4 md:ml-4 md:w-auto w-full md:absolute md:left-auto left-0 right-0 md:inline-flex md:items-center">
-          {/* <div className="absolute left-1/2 justify-center items-end md:mr-auto md:ml-auto  md:py-1 md:pl-4 inline-flex "> */}
+
+          <div className="md:w-auto w-full md:ml-4 md:text-center lg:ml-48">
+    <div className="md:flex md:space-x-1 space-y-2 md:space-y-0">
+      <button
+        className="text-white hover:font-bold m-1 text-base"
+        onClick={() => i18n.changeLanguage("en")}
+      >
+        EN
+      </button>
+      <span className="text-white">{" "}</span>
+      <button
+        className="text-white hover:font-bold m-1 text-base"
+        onClick={() => i18n.changeLanguage("es")}
+      >
+        ES
+      </button>
+    </div>
+  </div>
+          {/* <div className="md:flex md:space-x-2 space-y-2 md:space-y-0 md:mt-4 md:ml-4 md:w-auto w-full md:absolute md:left-auto left-0 right-0 md:items-center flex justify-center lg:justify-start">
           <button
             className="text-white hover:font-bold m-1 text-base"
             onClick={() => i18n.changeLanguage("en")}
@@ -44,7 +61,7 @@ const Navbar = () => {
           >
             ES
           </button>
-          </div>
+          </div> */}
         </nav>
         <a
           href="#contact"

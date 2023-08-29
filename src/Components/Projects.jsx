@@ -10,7 +10,7 @@ const Projects = () => {
 
     return(
         <section id="projects" className="text-gray-400 body-font mt-1">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+      <div className="container px-5 py-10 mx-auto text-center lg:px-40 max-w-full">
         <div className="flex flex-col w-full mb-20">
           <FaCode className="mx-auto inline-block w-10 mb-4 text-2xl" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">

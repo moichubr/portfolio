@@ -8,7 +8,7 @@ const Certificates = () => {
 
   return (
     <section id="certificates">
-      <div className="text-white text-center container px-5 py-10 mx-auto">
+      <div className="text-white text-center container px-5 py-10 mx-auto max-w-full">
         <PiCertificate className="w-10 inline-block mb-4 text-gray-400 text-5xl"/>
         <p className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">{t("certificates.title")}</p>
         <div className="mt-4 justify-center items-center">

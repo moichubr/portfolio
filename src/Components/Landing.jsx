@@ -7,7 +7,7 @@ const {t} = useTranslation("global")
 
   return (
     <section id="about" className="py-8 md:py-16 lg:py-2">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:w-full items-center">
           <div className="text-center md:text-left md:mt-12 lg:mt-24 md:ml-12 lg:ml-32">
             <p className="text-white font-semibold text-4xl sm:text-5xl md:text-5xl lg:text-3xl">
