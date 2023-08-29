@@ -28,8 +28,8 @@ const Navbar = () => {
           <a href="#certificates" className="mr-5 text-white hover:font-bold">
             {t("navbar.op3")}
           </a>
-
-          <div className="absolute  left-1/2 flex justify-center items-end">
+          <div className="md:mt-4 md:ml-4 md:w-auto w-full md:absolute md:left-auto left-0 right-0 md:inline-flex md:items-center">
+          {/* <div className="absolute left-1/2 justify-center items-end md:mr-auto md:ml-auto  md:py-1 md:pl-4 inline-flex "> */}
           <button
             className="text-white hover:font-bold m-1 text-base"
             onClick={() => i18n.changeLanguage("en")}
