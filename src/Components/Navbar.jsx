@@ -4,8 +4,6 @@ import { useTranslation } from "react-i18next";
 // import i18n from "../i18n";
 
 const Navbar = () => {
-  // const [isActive, setIsActive] = useState(false)
-  // const isActive = ({ isActive }) => `link ${isActive ? 'active' : ''}`
   const { i18n, t } = useTranslation("global");
 
   return (
@@ -18,7 +16,7 @@ const Navbar = () => {
           Moira Brun
         </a>
 
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+        <nav className=" md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
           <a href="#projects" className="mr-5 text-white hover:font-bold">
             {t("navbar.op1")}
           </a>
@@ -28,48 +26,37 @@ const Navbar = () => {
           <a href="#certificates" className="mr-5 text-white hover:font-bold">
             {t("navbar.op3")}
           </a>
-
-          <div className="md:w-auto w-full md:ml-4 md:text-center lg:ml-48">
-    <div className="md:flex md:space-x-1 space-y-2 md:space-y-0">
-      <button
-        className="text-white hover:font-bold m-1 text-base"
-        onClick={() => i18n.changeLanguage("en")}
-      >
-        EN
-      </button>
-      <span className="text-white">{" "}</span>
-      <button
-        className="text-white hover:font-bold m-1 text-base"
-        onClick={() => i18n.changeLanguage("es")}
-      >
-        ES
-      </button>
-    </div>
-  </div>
-          {/* <div className="md:flex md:space-x-2 space-y-2 md:space-y-0 md:mt-4 md:ml-4 md:w-auto w-full md:absolute md:left-auto left-0 right-0 md:items-center flex justify-center lg:justify-start">
-          <button
-            className="text-white hover:font-bold m-1 text-base"
-            onClick={() => i18n.changeLanguage("en")}
-          >
-            EN
-          </button>
-          <span className="text-white ">{" "}</span>
-
-          <button
-            className="text-white hover:font-bold m-1 text-base"
-            onClick={() => i18n.changeLanguage("es")}
-          >
-            ES
-          </button>
-          </div> */}
         </nav>
+        {/* flex flex-col md:flex-row items-end md:items-center */}
+        <div className="flex flex-col sm:flex-row items-end md:items-center md:ml-4 md:text-center lg:ml-auto md:mr-4">
         <a
           href="#contact"
-          className="inline-flex items-center bg-green-500 text-white border-0 py-1 px-3 focus:outline-none hover:bg-green-600 rounded text-base mt-4 md:mt-0"
+          className="inline-flex items-center bg-green-500 text-white border-0 py-1 px-3 focus:outline-none hover:bg-green-600 rounded text-base mt-4 md:mt-0 md:ml-auto mr-0 justify-end"
         >
           {t("navbar.op4")}
           <HiArrowNarrowRight className="w-4 h-4 ml-1" />
         </a>
+
+        <div className="md:w-auto w-full md:ml-4 md:text-center lg:ml-4 md:mr-4">
+      <div className="md:flex md:space-x-1 space-y-2 md:space-y-0">
+        <button
+          className="text-white hover:font-bold m-1 text-base"
+          onClick={() => i18n.changeLanguage("en")}
+        >
+          EN
+        </button>
+        <span className="text-white">{" "}</span>
+        <button
+          className="text-white hover:font-bold m-1 text-base"
+          onClick={() => i18n.changeLanguage("es")}
+        >
+          ES
+        </button>
+      </div>
+    </div>
+  
+
+      </div>
       </div>
     </header>
   );
