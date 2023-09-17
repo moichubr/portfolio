@@ -31,7 +31,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className="bg-indigo-950 md:sticky top-0 z-10">
+    <header className="bg-indigo-950 sticky top-0 z-10">
       <div className="container relative mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center max-w-full">
         <a
           href="#about"
@@ -52,8 +52,10 @@ const Navbar = () => {
           </a>
         </nav>
         {/* flex flex-col md:flex-row items-end md:items-center */}
+        
         <div className="flex flex-col sm:flex-row items-end md:items-center md:ml-4 md:text-center lg:ml-auto md:mr-4">
-          <div className="text-white mr-4">
+         <div className="flex">
+          <div className="text-white mr-4 mt-4 lg:mt-0">
             <button onClick={changeGitHub} className="mr-4" title="GitHub">
               <FaGithub size={25} />
             </button>
@@ -72,6 +74,8 @@ const Navbar = () => {
             {t("navbar.op4")}
             <HiArrowNarrowRight className="w-4 h-4 ml-1" />
           </a>
+          </div>
+
 
           <div className="md:w-auto w-full md:ml-4 md:text-center lg:ml-4 md:mr-4">
             <div className="md:flex md:space-x-1 space-y-2 md:space-y-0">
