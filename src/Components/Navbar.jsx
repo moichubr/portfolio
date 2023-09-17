@@ -9,10 +9,9 @@ import { AiFillLinkedin } from "react-icons/ai";
 
 const Navbar = () => {
   const { i18n, t } = useTranslation("global");
-  // const [isSpanish, setIsSpanish] = useState(false);
 
 
-  console.log(i18n);
+  // console.log(i18n);
 
   function changeGitHub() {
     window.location.href = "https://github.com/moichubr";
@@ -23,7 +22,7 @@ const Navbar = () => {
   }
 
   function changeResume() {
-    i18n.languages[0] === 'es'
+    i18n.languages[0] === "es"
       ? (window.location.href =
           "https://drive.google.com/file/d/18yQ-KptHAq3hchP4OJqaqJDMJLRVquBk/view?usp=sharing")
       : (window.location.href =
@@ -52,39 +51,36 @@ const Navbar = () => {
           </a>
         </nav>
         {/* flex flex-col md:flex-row items-end md:items-center */}
-        
+
         <div className="flex flex-col sm:flex-row items-end md:items-center md:ml-4 md:text-center lg:ml-auto md:mr-4">
-         <div className="flex">
-          <div className="text-white mr-4 mt-4 lg:mt-0">
-            <button onClick={changeGitHub} className="mr-4" title="GitHub">
-              <FaGithub size={25} />
-            </button>
-            <button onClick={changeLinkdIn} className="mr-4" title="LinkedIn">
-              <AiFillLinkedin size={25} />
-            </button>
-            <button onClick={changeResume} title="Resume">
-              <FaFileDownload size={25} />
-            </button>
+          <div className="flex">
+            <div className="text-white mr-4 mt-4 lg:mt-0">
+              <button onClick={changeGitHub} className="mr-4" title="GitHub">
+                <FaGithub size={25} />
+              </button>
+              <button onClick={changeLinkdIn} className="mr-4" title="LinkedIn">
+                <AiFillLinkedin size={25} />
+              </button>
+              <button onClick={changeResume} title="Resume">
+                <FaFileDownload size={25} />
+              </button>
+            </div>
+
+            <a
+              href="#contact"
+              className="inline-flex items-center bg-green-500 text-white border-0 py-1 px-3 focus:outline-none hover:bg-green-600 rounded text-base mt-4 md:mt-0 md:ml-auto mr-0 justify-end"
+            >
+              {t("navbar.op4")}
+              <HiArrowNarrowRight className="w-4 h-4 ml-1" />
+            </a>
           </div>
 
-          <a
-            href="#contact"
-            className="inline-flex items-center bg-green-500 text-white border-0 py-1 px-3 focus:outline-none hover:bg-green-600 rounded text-base mt-4 md:mt-0 md:ml-auto mr-0 justify-end"
-          >
-            {t("navbar.op4")}
-            <HiArrowNarrowRight className="w-4 h-4 ml-1" />
-          </a>
-          </div>
-
-
-          <div className="md:w-auto w-full md:ml-4 md:text-center lg:ml-4 md:mr-4">
+          <div className="w-full  md:text-center lg:ml-4 mx-auto">
             <div className="md:flex md:space-x-1 space-y-2 md:space-y-0">
               <button
                 className="text-white hover:font-bold m-1 text-base"
                 onClick={() => {
-                // }setIsSpanish(false)
                   i18n.changeLanguage("en");
-                  console.log("Switched to English", i18n.languages[0]);
                 }}
                 title="English"
               >
@@ -94,9 +90,7 @@ const Navbar = () => {
               <button
                 className="text-white hover:font-bold m-1 text-base"
                 onClick={() => {
-                  // setIsSpanish(true)
                   i18n.changeLanguage("es");
-                  console.log("Switched to Spanish. New isSpanish value:", i18n.languages[0])
                 }}
                 title="Español"
               >
