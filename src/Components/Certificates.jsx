@@ -18,7 +18,7 @@ const Certificates = () => {
     {certificates?.map((cert) => {
       return (
         <a href={cert.img} key={cert.title}>
-          <li className="font-semibold text-base mb-2 bg-indigo-950 text-white p-4 w-full rounded-sm">
+          <li className="font-semibold text-base mb-2 bg-indigo-950 hover:bg-indigo-900 hover:scale-95 transform text-white p-4 w-full rounded-sm">
             {cert.title}
           </li>
         </a>

@@ -12,7 +12,7 @@ const Navbar = () => {
   // const [isSpanish, setIsSpanish] = useState(false);
 
 
-  console.log(i18n);
+  // console.log(i18n);
 
   function changeGitHub() {
     window.location.href = "https://github.com/moichubr";
@@ -55,14 +55,14 @@ const Navbar = () => {
         
         <div className="flex flex-col sm:flex-row items-end md:items-center md:ml-4 md:text-center lg:ml-auto md:mr-4">
          <div className="flex items-center">
-          <div className="text-white mr-4 mt-4 lg:mt-0 ">
-            <button onClick={changeGitHub} className="mr-4" title="GitHub">
+          <div className="text-white mr-4 mt-4 lg:mt-0">
+            <button onClick={changeGitHub} className="mr-4 hover:scale-125 trasform" title="GitHub">
               <FaGithub size={25} />
             </button>
-            <button onClick={changeLinkdIn} className="mr-4" title="LinkedIn">
+            <button onClick={changeLinkdIn} className="mr-4 hover:scale-125 trasform" title="LinkedIn">
               <AiFillLinkedin size={25} />
             </button>
-            <button onClick={changeResume} title="Resume">
+            <button onClick={changeResume} className="hover:scale-125 transform" title="Resume">
               <FaFileDownload size={25} />
             </button>
           </div>

@@ -9,42 +9,42 @@
         "welcome": "Welcome!",
         "iam": "I'm Moira Brun",
         "role": "Full Stack web developer",
-        "description": "Committed to delivering user-centric experiences, I excel in both frontend and backend development, ensuring seamless functionality and dynamic interactions applying modern web developing technologies. Eager to contribute my expertise and drive to innovative projects, I am enthusiastic about collaborating with teams that share a common goal of generating a positive impact.",
+        "description": "I create software that not only meets business objectives but also enhances the user experience. My focus encompasses both frontend and backend technologies, allowing me to create comprehensive, effective, and efficient solutions. I am committed to building applications that provide real and lasting value. Let's bring ideas to digital life and make them stand out!",
         "button1": "Coordinate a meeting",
         "button2": "Take a look at my projects"
     },
     "projects":{
         "title": "Projects",
-        "description":"Here's some of my main projects that I developed by myself and in collaboration with collegues, applying the agile SCRUM method. I'm always ready and motivated to start new challenges! I'm strongly result-oriented: love designing, creating and materializing solutions for each particular case. Give client the best experience is my goal.",
+        "description":"This section showcases some of my key projects. Some of them I developed as a full-stack effort, while others were done in collaboration with colleagues within an Agile framework, applying SCRUM. I enjoy fully engaging in projects to deliver value to both the business objective and the user, keeping the needs of both parties in mind throughout the process to achieve positive outcomes.",
         "stack":"Technologies stack:"
     },
     "skills":{
         "title":"Skills & Technologies",
-        "description":"Because of mi curiosity and interest on the latest technologies, I'm looking for enhancing my skills practicing and researching about new develop tools to achive a high-quality product."
+        "description":"I feel most comfortable working with the technologies listed below, but due to my curiosity and interest in ongoing learning, I strive to enhance and improve my skills by developing and researching new software technologies as well, aiming to create better products and high-quality solutions."
     },
     "certificates":{
         "title":"Certificates"
     },
     "contact":{
         "title":"Contact me",
-        "description":"If you are looking for someone committed, with a positive attitude and eager to join a work team to generate a positive impact.",
+        "description":"If you are looking for someone with a positive attitude, commitment, and ready to join a team to make an impact, do not hesitate to get in touch with me.",
         "name":"Name",
         "message":"Message",
         "location":"BASED IN",
         "button":"Send"
     },
     "footer":{
-        "title": "Developed with React by"
+        "title": "Copyright © 2023"
     },
     "projectsdata":{
         "1":{
-            "description":"This innovative e-commerce platform connects travelers with a top-tier travel agency, offering curated packages to the world's most iconic destinations. Can tailor the adventure by adding personalized activities to the itinerary, ensuring your journey will be unique."
+            "description":"This innovative e-commerce platform connects travelers with a travel agency that provides personalized travel packages and activities. The admin dashboard is a valuable addition designed to streamline and enhance the business. It is crafted to improve the user shopping experience and provide the admin with excellent management tools."
         },
         "2":{
-            "description":"This useful app, completely responsive, works as a recipe book where user can find over +100 recipes, create there own ones an delete them if wanted. Also, can look up for a recipe by its name or by keyword, filter them by diet type and sort them alphabetically or by health score."
+            "description":"This handy, fully responsive application functions like a recipe book, where the user can discover over 100 recipes, create their own recipes, and delete them if desired. Furthermore, users can search for a recipe by its name or keyword, filter them by dietary type, and sort them alphabetically or by health rating."
         },
         "3":{
-            "description":"This is an academic project I developed to apply all learned technologies during bootcamp such as React, Redux, CSS3, Express, Sequelize, PostgreSQL. In this app user can search and filter over +750 Rick and Morty's serie characters, save their favs and delete them if wanted."
+            "description":"This is an academic project I developed to apply all the technologies learned during the bootcamp, such as React, Redux, CSS3, Express, Sequelize, and PostgreSQL. In this application, users can log in, search and filter over 750 characters from the Rick and Morty series, save their favorites, and delete them if desired."
         }
     }
 

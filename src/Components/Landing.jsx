@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 const Landing = () => {
 const {t} = useTranslation("global")
 
+
   return (
     <section id="about" className="py-8 md:py-16 lg:py-2">
       <div className="container mx-auto max-w-full">
@@ -19,7 +20,7 @@ const {t} = useTranslation("global")
             <p className="text-white font-light text-xl sm:text-2xl md:text-2xl lg:text-xl mt-2">
               {t('about.role')}
             </p>
-            <p className="text-white font-light md:text-lg lg:text-base mt-2">
+            <p className="text-white font-light md:text-lg lg:text-base mt-2" >
               {t('about.description')}
             </p>
 
