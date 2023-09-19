@@ -25,9 +25,9 @@ const Navbar = () => {
   function changeResume() {
     i18n.languages[0] === 'es'
       ? (window.location.href =
-          "https://drive.google.com/file/d/18yQ-KptHAq3hchP4OJqaqJDMJLRVquBk/view?usp=sharing")
+          "https://drive.google.com/file/d/12zgkUVKuYfKGjw2072VbvV_jHxgm8N_a/view?usp=sharing")
       : (window.location.href =
-          "https://drive.google.com/file/d/1-i4o9xoTEp1PaL499Sm4WPBKv1SKtH45/view?usp=sharing");
+          "https://drive.google.com/file/d/1dtn6aIJYudobg5kiTUd5_2R4fyj-rDgp/view?usp=sharing");
   }
 
   return (
