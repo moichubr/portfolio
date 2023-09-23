@@ -1,42 +1,14 @@
 import React from "react";
-import { useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
 import { useTranslation } from "react-i18next";
-// import validate from "./ContactValidation";
 
 const Contact = () => {
   const { t } = useTranslation("global");
-  const [contactData, setContactData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  // const [errors, setErrors] = useState({
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  // });
-
-  const handleInputChange = (e) => {
-    e.preventDefault();
-
-    setContactData({
-      ...contactData,
-      [e.target.name]: e.target.value,
-    });
-
-    // setErrors(
-    //   validate({
-    //     ...contactData,
-    //     [e.target.name]: e.target.value,
-    //   })
-    // );
-  };
 
   return (
     <section id="contact" className="relative">
+
       <div className="container max-w-full px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/5 lg:ml-28 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-center relative">
           <iframe
@@ -79,9 +51,11 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
+
         <form
-          action="https://formsubmit.co/c5c932f011fd5241af4b6737ae449311"
           method="POST" //API para gestionar forms
+          action="https://formsubmit.co/c5c932f011fd5241af4b6737ae449311"
           name="contact"
           className="lg:w-1/3 lg:mr-36 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
@@ -97,15 +71,13 @@ const Contact = () => {
               type="text"
               id="name"
               name="name"
-              value={contactData.name}
-              onChange={handleInputChange}
+              minLength="3"
+              maxLength="40"
+              placeholder="Jane Doe"
+              required
               className="w-full bg-gray-200 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
-            {/* {errors.name ? (
-              <span className="text-indigo-950 text-s">
-                <b>{errors.name}</b>
-              </span>
-            ) : null} */}
+        
           </div>
           <div className="relative mb-4">
             <label htmlFor="email" className="leading-7 text-sm text-gray-400">
@@ -115,15 +87,10 @@ const Contact = () => {
               type="email"
               id="email"
               name="email"
-              value={contactData.email}
-              onChange={handleInputChange}
+              placeholder="email@mail.com"
               className="w-full bg-gray-100 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              required
             />
-            {/* {errors.email ? (
-              <span className="text-indigo-950">
-                <b>{errors.email}</b>
-              </span>
-            ) : null} */}
           </div>
           <div className="relative mb-4">
             <label
@@ -135,24 +102,20 @@ const Contact = () => {
             <textarea
               id="message"
               name="message"
-              value={contactData.message}
-              onChange={handleInputChange}
+              placeholder="..."
+              minLength="20"
               className="w-full bg-gray-100 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-800 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              required
             />
-            {/* {errors.message ? (
-              <span className="text-indigo-950">
-                <b>{errors.message}</b>
-              </span>
-            ) : null} */}
           </div>
-          {/* {!errors.length ? ( */}
+         
           <button
             type="submit"
             className="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
           >
             {t("contact.button")}
           </button>
-          {/* ) : window.alert("Check the provided information")} */}
+        
           <input
             type="hidden"
             name="_next"

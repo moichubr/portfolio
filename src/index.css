@@ -36,8 +36,8 @@ code {
 }
 .corner-text {
   position: absolute;
-  bottom: 8%; /* Ajusta según tu preferencia */
-  left: 5%; /* Ajusta según tu preferencia */
+  bottom: 8%; 
+  left: 5%; 
   text-align: left;
   max-width: fit-content;
 
@@ -45,7 +45,6 @@ code {
 
 
 @media (min-width: 768px) {
-  /* Ajustes para pantallas más grandes, por ejemplo, tablets */
   .corner-text {
     bottom: 20vw;
     left: 20vw;
@@ -53,11 +52,18 @@ code {
   }
 }
 @media (min-width: 1024px) {
-  /* Ajustes para pantallas más grandes, por ejemplo, pantallas de escritorio */
   .corner-text {
     bottom: 16vw;
     left: 18vw;
     font-size: 20px;
   }
 }
+}
+
+:is(input, textarea):invalid{
+  border: 3px solid rgb(180, 4, 4);
+}
+
+:is(input, textarea):valid{
+  border: 3px solid green
 }
