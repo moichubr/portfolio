@@ -38,12 +38,15 @@
     },
     "projectsdata":{
         "1":{
-            "description":"This innovative e-commerce platform connects travelers with a travel agency that provides personalized travel packages and activities. The admin dashboard is a valuable addition designed to streamline and enhance the business. It is crafted to improve the user shopping experience and provide the admin with excellent management tools."
+            "description":"A Landing Page for an agricultural company with the goal of bolstering its digital presence. The information architecture is geared towards providing a clear and straightforward user experience, communicating the services offered and the company's added value, with a focus on facilitating a swift and personalized contact process between the visitor and the company via WhatsApp."
         },
         "2":{
-            "description":"This handy, fully responsive application functions like a recipe book, where the user can discover over 100 recipes, create their own recipes, and delete them if desired. Furthermore, users can search for a recipe by its name or keyword, filter them by dietary type, and sort them alphabetically or by health rating."
+            "description":"This innovative e-commerce platform connects travelers with a travel agency that provides personalized travel packages and activities. The admin dashboard is a valuable addition designed to streamline and enhance the business. It is crafted to improve the user shopping experience and provide the admin with excellent management tools."
         },
         "3":{
+            "description":"This handy, fully responsive application functions like a recipe book, where the user can discover over 100 recipes, create their own recipes, and delete them if desired. Furthermore, users can search for a recipe by its name or keyword, filter them by dietary type, and sort them alphabetically or by health rating."
+        },
+        "4":{
             "description":"This is an academic project I developed to apply all the technologies learned during the bootcamp, such as React, Redux, CSS3, Express, Sequelize, and PostgreSQL. In this application, users can log in, search and filter over 750 characters from the Rick and Morty series, save their favorites, and delete them if desired."
         }
     }

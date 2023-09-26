@@ -41,13 +41,13 @@ const Navbar = () => {
         </a>
 
         <nav className=" md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-          <a href="#projects" className="mr-5 text-white hover:font-bold">
+          <a href="#projects" className="mr-5 text-white hover:font-bold hover:border-2 hover:border-slate-100 rounded-xl py-2 px-4">
             {t("navbar.op1")}
           </a>
-          <a href="#skills" className="mr-5 text-white hover:font-bold">
+          <a href="#skills" className="mr-5 text-white hover:font-bold hover:border-2 hover:border-slate-100 rounded-xl py-2 px-4">
             {t("navbar.op2")}
           </a>
-          <a href="#certificates" className="mr-5 text-white hover:font-bold">
+          <a href="#certificates" className="mr-5 text-white hover:font-bold hover:border-2 hover:border-slate-100 rounded-xl py-2 px-4">
             {t("navbar.op3")}
           </a>
         </nav>
@@ -80,7 +80,7 @@ const Navbar = () => {
           <div className="md:w-auto w-full mx-auto md:text-center lg:ml-4 ">
             <div className="md:flex md:space-x-1 space-y-2 md:space-y-0">
               <button
-                className="text-white hover:font-bold m-1 text-base"
+                className="text-white hover:font-bold m-1 text-base hover:border-b-2 hover:border-slate-100 p-1"
                 onClick={() => {
                   i18n.changeLanguage("en");
                 }}
@@ -90,7 +90,7 @@ const Navbar = () => {
               </button>
               <span className="text-white"> </span>
               <button
-                className="text-white hover:font-bold m-1 text-base"
+                className="text-white hover:font-bold m-1 text-base hover:border-b-2 hover:border-slate-100 p-1"
                 onClick={() => {
                   i18n.changeLanguage("es");
                 }}

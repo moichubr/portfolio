@@ -52,19 +52,19 @@ const Contact = () => {
           </div>
         </div>
 
-
+    
         <form
           method="POST" //API para gestionar forms
           action="https://formsubmit.co/c5c932f011fd5241af4b6737ae449311"
           name="contact"
-          className="lg:w-1/3 lg:mr-36 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+          className="lg:w-1/3 lg:mr-36 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 "
         >
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             {t("contact.title")}
           </h2>
           <p className="text-white mb-5">{t("contact.description")}</p>
-          <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+          <div className="relative mb-4 text-left">
+            <label htmlFor="name" className="leading-7 text-sm text-slate-300 font-semibold">
               {t("contact.name")}
             </label>
             <input
@@ -79,8 +79,8 @@ const Contact = () => {
             />
         
           </div>
-          <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+          <div className="relative mb-4 text-left">
+            <label htmlFor="email" className="leading-7 text-sm text-slate-300 font-semibold">
               E-mail
             </label>
             <input
@@ -92,10 +92,10 @@ const Contact = () => {
               required
             />
           </div>
-          <div className="relative mb-4">
+          <div className="relative mb-4 text-left">
             <label
               htmlFor="message"
-              className="leading-7 text-sm text-gray-400"
+              className="leading-7 text-sm text-slate-300 font-semibold"
             >
               {t("contact.message")}
             </label>

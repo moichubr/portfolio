@@ -38,12 +38,15 @@
     },
     "projectsdata":{
         "1":{
-            "description":"Esta innovadora plataforma de e-commerce conecta a los viajeros con una agencia de viajes que ofrece paquetes turísticos personalizados y actividades. El admin dashboard es un plus que busca simplificar y potenciar el negocio. Esta pensada para mejorar la experiencia de compra del usuario y darle al admin muy buenas herramientas de gestion."
+            "description":" Landing page para una empresa agrícola con el objetivo de fortalecer su presencia digital. La arquitectura de la información esta orientada a brindar una experiencia de usuario clara y sencilla, comunicando los servicios que se ofrecen y el valor agregado de la empresa, haciendo hincapié en generar un proceso de contacto rápido y personalizado entre el visitante y la empresa a través de whatsapp."
         },
         "2":{
-            "description":"Esta útil aplicación, completamente responsiva, funciona como un libro de recetas donde el usuario va a encontrar más de 100 recetas, puede crear sus propias recetas y eliminarlas si lo desea. Además, puede buscar una receta por su nombre o por palabra clave, filtrarlas por tipo de dieta y ordenarlas alfabéticamente o por puntuación de salud."
+            "description":"Esta innovadora plataforma de e-commerce conecta a los viajeros con una agencia de viajes que ofrece paquetes turísticos personalizados y actividades. El admin dashboard es un plus que busca simplificar y potenciar el negocio. Esta pensada para mejorar la experiencia de compra del usuario y darle al admin muy buenas herramientas de gestion."
         },
         "3":{
+            "description":"Esta útil aplicación, completamente responsiva, funciona como un libro de recetas donde el usuario va a encontrar más de 100 recetas, puede crear sus propias recetas y eliminarlas si lo desea. Además, puede buscar una receta por su nombre o por palabra clave, filtrarlas por tipo de dieta y ordenarlas alfabéticamente o por puntuación de salud."
+        },
+        "4":{
             "description":"Este es un proyecto académico que desarrollé para aplicar todas las tecnologías aprendidas durante el bootcamp como React, Redux, CSS3, Express, Sequelize, PostgreSQL. En esta aplicación el usuario puede loguearse y buscar y filtrar más de 750 personajes de la serie Rick y Morty, guardar sus favoritos y eliminarlos si lo desea."
         }
     }

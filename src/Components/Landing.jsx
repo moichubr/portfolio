@@ -17,7 +17,7 @@ const {t} = useTranslation("global")
             <p className="text-indigo-950 font-bold text-5xl sm:text-6xl md:text-6xl lg:text-6xl mt-2">
               {t('about.iam')}
             </p>
-            <p className="text-white font-light text-xl sm:text-2xl md:text-2xl lg:text-xl mt-2">
+            <p className="text-white font-extralight text-xl sm:text-2xl md:text-2xl lg:text-xl mt-2">
               {t('about.role')}
             </p>
             <p className="text-white font-light md:text-lg lg:text-base mt-2" >
