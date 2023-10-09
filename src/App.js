@@ -16,8 +16,8 @@ function App() {
     <div className="App md:max-w-full lg:max-w-full max-w-full">
       <Navbar />
       <Landing />
-      <Projects />
       <Skills />
+      <Projects />
       <Certificates />
       <Contact />
       <Footer />

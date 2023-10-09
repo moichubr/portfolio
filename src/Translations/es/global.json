@@ -26,12 +26,12 @@
         "title":"Certificados"
     },
     "contact":{
-        "title":"Contactame!",
-        "description":"Si estas buscando a una persona con actitud positiva, comprometida y lista para unirse a un equipo de trabajo para generar impacto no dudes en ponerte en contacto conmigo.",
+        "title":"Ponte en contacto",
+        "description":"Estoy ansiosa por conversar contigo y determinar cómo puedo contribuir a tu proyecto. ¡No dudes en contactarme!",
         "name":"Nombre",
         "message":"Mensaje",
         "location":"UBICADA EN",
-        "button":"Enviar"
+        "button":"Enviar mensaje"
     },
     "footer":{
         "title": "Copyright © 2023"
@@ -47,7 +47,7 @@
             "description":"Esta útil aplicación, completamente responsiva, funciona como un libro de recetas donde el usuario va a encontrar más de 100 recetas, puede crear sus propias recetas y eliminarlas si lo desea. Además, puede buscar una receta por su nombre o por palabra clave, filtrarlas por tipo de dieta y ordenarlas alfabéticamente o por puntuación de salud."
         },
         "4":{
-            "description":"Este es un proyecto académico que desarrollé para aplicar todas las tecnologías aprendidas durante el bootcamp como React, Redux, CSS3, Express, Sequelize, PostgreSQL. En esta aplicación el usuario puede loguearse y buscar y filtrar más de 750 personajes de la serie Rick y Morty, guardar sus favoritos y eliminarlos si lo desea."
+            "description":"Este es un proyecto académico que desarrollé para aplicar todas las tecnologías aprendidas durante el bootcamp como JavaScript, React, Redux, CSS3, HTML, Express, Sequelize, PostgreSQL. En esta aplicación el usuario puede loguearse y buscar y filtrar más de 750 personajes de la serie Rick y Morty, guardar sus favoritos y eliminarlos si lo desea."
         }
     }
 }

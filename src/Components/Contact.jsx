@@ -64,7 +64,7 @@ const Contact = () => {
           </h2>
           <p className="text-white mb-5">{t("contact.description")}</p>
           <div className="relative mb-4 text-left">
-            <label htmlFor="name" className="leading-7 text-sm text-slate-300 font-semibold">
+            <label htmlFor="name" className="leading-10 text-lg text-slate-100 font-semibold">
               {t("contact.name")}
             </label>
             <input
@@ -75,12 +75,12 @@ const Contact = () => {
               maxLength="40"
               placeholder="Jane Doe"
               required
-              className="w-full bg-gray-200 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-transparent border-b border-gray-100 text-base outline-none text-white py-1 px-3 leading-8 ease-in-out"
             />
         
           </div>
           <div className="relative mb-4 text-left">
-            <label htmlFor="email" className="leading-7 text-sm text-slate-300 font-semibold">
+            <label htmlFor="email" className="leading-7 text-lg text-slate-100 font-semibold">
               E-mail
             </label>
             <input
@@ -88,14 +88,14 @@ const Contact = () => {
               id="email"
               name="email"
               placeholder="email@mail.com"
-              className="w-full bg-gray-100 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-transparent border-b border-gray-100 text-base outline-none text-white py-1 px-3 leading-8 ease-in-out"
               required
             />
           </div>
           <div className="relative mb-4 text-left">
             <label
               htmlFor="message"
-              className="leading-7 text-sm text-slate-300 font-semibold"
+              className="leading-10 text-lg text-slate-100 font-semibold"
             >
               {t("contact.message")}
             </label>
@@ -104,7 +104,7 @@ const Contact = () => {
               name="message"
               placeholder="..."
               minLength="20"
-              className="w-full bg-gray-100 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-800 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              className="w-full bg-transparent border-b border-gray-100 h-32 text-base outline-none text-white py-1 px-3 resize-none leading-6 ease-in-out"
               required
             />
           </div>

@@ -41,13 +41,13 @@ const Navbar = () => {
         </a>
 
         <nav className=" md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-          <a href="#projects" className="mr-5 text-white hover:font-bold hover:border-2 hover:border-slate-100 rounded-xl py-2 px-4">
+          <a href="#projects" className="mr-5 text-white hover:font-bold hover:border hover:border-slate-100 rounded-xl py-2 px-4">
             {t("navbar.op1")}
           </a>
-          <a href="#skills" className="mr-5 text-white hover:font-bold hover:border-2 hover:border-slate-100 rounded-xl py-2 px-4">
+          <a href="#skills" className="mr-5 text-white hover:font-bold hover:border hover:border-slate-100 rounded-xl py-2 px-4">
             {t("navbar.op2")}
           </a>
-          <a href="#certificates" className="mr-5 text-white hover:font-bold hover:border-2 hover:border-slate-100 rounded-xl py-2 px-4">
+          <a href="#certificates" className="mr-5 text-white hover:font-bold hover:border hover:border-slate-100 rounded-xl py-2 px-4">
             {t("navbar.op3")}
           </a>
         </nav>
@@ -56,13 +56,13 @@ const Navbar = () => {
         <div className="flex flex-col sm:flex-row items-end md:items-center md:ml-4 md:text-center lg:ml-auto md:mr-4">
          <div className="flex items-center">
           <div className="text-white mr-4 mt-4 lg:mt-0">
-            <button onClick={changeGitHub} className="mr-4 hover:scale-125 trasform" title="GitHub">
+            <button onClick={changeGitHub} className="hover:bg-gray-600 hover:opacity-90 hover:rounded-full p-3 trasform" title="GitHub">
               <FaGithub size={25} />
             </button>
-            <button onClick={changeLinkdIn} className="mr-4 hover:scale-125 trasform" title="LinkedIn">
+            <button onClick={changeLinkdIn} className="hover:bg-gray-600 hover:opacity-90 hover:rounded-full p-3 trasform" title="LinkedIn">
               <AiFillLinkedin size={25} />
             </button>
-            <button onClick={changeResume} className="hover:scale-125 transform" title="Resume">
+            <button onClick={changeResume} className="hover:bg-gray-600 hover:opacity-90 hover:rounded-full p-3 transform" title="Resume">
               <FaFileDownload size={25} />
             </button>
           </div>
@@ -80,7 +80,7 @@ const Navbar = () => {
           <div className="md:w-auto w-full mx-auto md:text-center lg:ml-4 ">
             <div className="md:flex md:space-x-1 space-y-2 md:space-y-0">
               <button
-                className="text-white hover:font-bold m-1 text-base hover:border-b-2 hover:border-slate-100 p-1"
+                className="text-white m-1 text-base hover:bg-gray-600 hover:opacity-90 hover:rounded-full p-3 trasform"
                 onClick={() => {
                   i18n.changeLanguage("en");
                 }}
@@ -90,7 +90,7 @@ const Navbar = () => {
               </button>
               <span className="text-white"> </span>
               <button
-                className="text-white hover:font-bold m-1 text-base hover:border-b-2 hover:border-slate-100 p-1"
+                className="text-white m-1 text-base hover:bg-gray-600 hover:opacity-90 hover:rounded-full p-3 trasform"
                 onClick={() => {
                   i18n.changeLanguage("es");
                 }}

@@ -56,11 +56,11 @@ code {
   }
 }
 }
-
+/* 
 :is(input, textarea):invalid{
   border: 3px solid rgb(180, 4, 4);
 }
 
 :is(input, textarea):valid{
   border: 3px solid green
-}
+} */

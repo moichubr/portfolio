@@ -13,7 +13,7 @@ export const myProjects = [
         description:"A Landing Page for an agricultural company with the goal of bolstering its digital presence. The information architecture is geared towards providing a clear and straightforward user experience, communicating the services offered and the company's added value, with a focus on facilitating a swift and personalized contact process between the visitor and the company via WhatsApp.",
         technologies:["Vite.js", "React", "React-icons", "TailwindCSS", "HTML5", "Cloudinary", "WhatsApp API", "Netlify"],
         image: agroseed,
-        deploy:"https://agroseed.netlify.app",
+        deploy:"https://agroseedservicios.com",
         repository:"https://github.com/moichubr/agroseeds",
         video:"",
         
