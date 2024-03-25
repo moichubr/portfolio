@@ -17,7 +17,7 @@ const location = useLocation()
 
     <Suspense fallback="loading...">
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route exact path='/' element={<Home />} />
         <Route path='/successSubmition' element={<Thankyou />} />
       </Routes>
     </Suspense>
