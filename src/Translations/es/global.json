@@ -63,7 +63,9 @@
         "description":"Quiero escuchar tu idea y averiguar cómo podemos trabajar juntos! Puedes encontrarme en mis redes sociales o enviarme un email justo aquí.",
         "name":"Nombre",
         "message":"Mensaje",
-        "button":"Enviar mensaje"
+        "button":"Enviar mensaje",
+        "thank_you":"Gracias!",
+        "message_thanks": "Tu mensaje ha sido enviado! Responderé lo antes posible."
     },
     "footer":{
         "title": "Copyright © 2023"

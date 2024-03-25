@@ -1,10 +1,11 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import RrssButtons from "./Reusable/RrssButtons";
+
 
 const Contact = () => {
   const { t } = useTranslation("global");
 
+  
   return (
     <section
       id="contact"
@@ -32,8 +33,8 @@ const Contact = () => {
       {/* -----------form------------ */}
       <div className="container lg:w-[50%] xl:w-[50%] w-full md:justify-center lg:my-6 xl:my-6 mx-auto flex flex-wrap lg:justify-end xl:justify-end">
         <form
+          action="https://formsubmit.co/brunmoira@gmail.com"
           method="POST" //API para gestionar forms
-          action="https://formsubmit.co/c5c932f011fd5241af4b6737ae449311"
           name="contact"
           className="lg:w-[80%] md:w-[70%] w-full flex flex-col mt-2 xl:mt-4 lg:mt-4 "
         >
@@ -98,12 +99,12 @@ const Contact = () => {
           <input
             type="hidden"
             name="_next"
-            value="https://moirabrun.netlify.app/"
+            value="https://moirabrun.netlify.app/successSubmition"
           />
           <input type="hidden" name="_captcha" value="false" />
         </form>
 
-        {/* 
+{/*        
          <div className="text-white lg:w-2/5 flex flex-col lg:ml-28 md:w-1/2 bg-transparent  overflow-hidden sm:mr-10 p-10 items-center justify-center relative">
           <h2>Encontrame en mis redes sociales</h2>
           <div className="text-white mt-4">
@@ -114,7 +115,7 @@ const Contact = () => {
               <AiFillLinkedin size={25} />
             </button>
             
-          </div> */}
+          </div> */} 
 
         {/* <iframe
             width="100%"

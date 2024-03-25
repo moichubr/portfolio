@@ -24,7 +24,7 @@ const {t} = useTranslation("global")
                  
           //        // textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'
                }}
-        className="animate-fade-left animate-duration-[2000ms] dm-serif font-extrabold tracking-wider xl:text-4xl lg:text-3xl text-2xl -mt-[30px] max-w-fit">
+        className="animate-fade-left animate-duration-[2000ms] poppins-regular font-extrabold tracking-wider xl:text-4xl lg:text-3xl text-2xl -mt-[30px] max-w-fit">
           {t("about.role")}
         </p>
         </div>
