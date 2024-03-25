@@ -16,7 +16,7 @@ const {t} = useTranslation("global")
         <p className="animate-fade-up animate-duration-[2000ms] poppins-bold text-6xl md:text-[6rem] lg:text-[6rem] xl:text-[6rem] text-slate-400 text-opacity-80 max-w-[50%] lg:h-[5rem] md:h-[5rem] h-[4.5rem] leading-3">Brun</p>
         <p 
         style={{
-                 background: "linear-gradient(90deg, #1A237E, #ff0072, #FFA726, #FFEB3B)",
+                 background: "linear-gradient(90deg, #1A237E, #ff0072, #FFEB3B)",
                 //  #FFC296  #240046  
                 
                  WebkitBackgroundClip: "text",
