@@ -24,7 +24,7 @@ const AnimationScrollHandler = ({children, component, setIsVisible}) => {
           return () => {
             window.removeEventListener('scroll', handleScroll);
           };
-      }, [component]);
+      }, [component, setIsVisible]);
 
     return(
         <>
