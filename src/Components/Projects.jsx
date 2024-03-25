@@ -1,87 +1,37 @@
-import React from "react";
+import { useState } from "react";
 import {myProjects} from "../data";
-import {FaCode, FaYoutube, FaGithub} from "react-icons/fa"
-import {CgWebsite} from "react-icons/cg"
 import { useTranslation } from 'react-i18next';
+import ProjectCard from "./ProjectCard";
+import AnimationScrollHandler from "./Reusable/AnimationScrollHandler";
 
 
 const Projects = () => {
   const {t} = useTranslation("global")
+  const [isVisible, setIsVisible] = useState(false)
 
     return(
-        <section id="projects" className="text-gray-400 body-font mt-1">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40 max-w-full">
-        <div className="flex flex-col w-full mb-20">
-          <FaCode className="mx-auto inline-block w-10 mb-4 text-2xl" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            {t('projects.title')}
-          </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-white text-base">
-          {t('projects.description')}
-          </p>
-        </div>
-        <div className="flex flex-wrap -m-4">
+      <AnimationScrollHandler setIsVisible={setIsVisible} component={'projects'}>
+        <section id="projects" className="flex flex-col h-auto max-h-auto w-full max-w-full md:px-24 lg:px-48 xl:px-48 px-4 lg:py-3 xl:py-3 mt-0 pb-14 lg:pb-20 xl:pb-20">
+      <div className={`${isVisible ? 'animate-fade-right animate-duration-[2000ms]' : ''}flex flex-col mt-20  w-full`}>
+                <div className="flex flex-row gap-3 items-center">
+           <span className="bg-pink-700 w-[20px] h-1"></span> <span className="text-pink-900 roboto-regular font-semibold text-md tracking-wide">{t("projects.title")}</span>
+
+                </div>
+            <p className="text-pink-900 roboto-regular font-semibold text-2xl tracking-wide">{t("projects.description")}</p>
+            </div>
+        <div className="flex flex-col w-full mt-8 gap-12 ">
           {myProjects.map((project, index) => (
             <a
               href={project.deploy ? project.deploy : null}
               key={index}
-              className="sm:w-1/2 w-100 p-4">
-                 <h1 className="title-font text-lg font-medium text-white mb-3">
-                    {project.name}
-                  </h1>
-              <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={project.image}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                 
-                  <p className="leading-relaxed">{t(`projectsdata.${project.id}.description`)}</p>
-
-                <h2 className="text-sm title-font font-medium text-green-400 mb-1">
-                {t('projects.stack')}
-                        <div>
-                        {project.technologies?.map((el, index) => {
-                            return (
-                                <span key={index}>| {el} |</span>
-                         )
-                        })}
-                        </div>
-                        
-                  </h2>
-                </div>
-              </div>
-            <div className="text-white justify-center flex mt-2">
-              {
-                project.video ? (
-          <div className="mr-4">
-            <a href={project.video} title="Presentation video">
-            <FaYoutube className="text-2xl"/>
-            </a>
-          </div>
-                ) : null
-              }
-          <div className="mr-4">
-            <a href={project.repository} title="Repository">
-            <FaGithub className="text-2xl"/>
-            </a>
-          </div>
-
-            { project.deploy ?
-          (<div className="mr-4">
-           <a href={project.deploy} title="Deployment">
-            <CgWebsite className="text-2xl"/>
-            </a>
-          </div>) :  null 
-        }
-
-            </div>
+              className={`${isVisible ? 'animate-flip-up animate-duration-[2000ms]' : ''} w-full h-auto`}>
+                 <ProjectCard project={project} />
             </a>
           ))}
         </div>
-      </div>
+     
     </section>
+    </AnimationScrollHandler>
 
 
     )

@@ -1,44 +1,43 @@
-import React from "react";
-import {skills} from "../data"
-import {BsCheck2Circle, BsTools} from "react-icons/bs"
+import { useState } from "react";
+import { skills } from "../data";
 import { useTranslation } from "react-i18next";
-
+import AnimationScrollHandler from "./Reusable/AnimationScrollHandler";
+import SkillsCard from "./SkillsCard";
 
 const Skills = () => {
-  const {t} = useTranslation("global")
+  const { t } = useTranslation("global");
+  const [isVisible, setIsVisible] = useState(false);
 
-    return(
-        <section id="skills">
-      <div className="container px-5 py-10 mx-auto">
-        <div className="text-center mb-20">
-          <BsTools className="w-10 inline-block mb-4 text-gray-400 text-2xl" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
-            {t('skills.title')}
-          </h1>
-          <p className="text-base text-white leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-          {t('skills.description')}
-          </p>
+  return (
+    <AnimationScrollHandler setIsVisible={setIsVisible} component={"skills"}>
+      <section id="skills">
+        <div className="flex flex-col h-auto max-h-auto w-full max-w-full md:px-24 lg:px-48 xl:px-48 px-4 pt-3  pb-8 ">
+          <div
+            className={`${
+              isVisible ? "animate-fade-right animate-duration-[2000ms]" : ""
+            }flex flex-col w-full pt-20`}
+          >
+            <div className="flex flex-row gap-3 items-center">
+              <span className="bg-pink-700 w-[20px] h-1"></span>{" "}
+              <span className="text-pink-900 roboto-regular font-semibold text-md tracking-wide">
+                {t("skills.title")}
+              </span>
+            </div>
+            <p className="text-pink-900 roboto-regular font-semibold text-2xl tracking-wide">
+              {t("skills.description")}
+            </p>
+          </div>
+          <div
+            className={`flex flex-row flex-wrap justify-center items-center w-full mt-8 gap-4`}
+          >
+            {skills.map((skill, index) => (
+              <SkillsCard index={index} skill={skill} isVisible={isVisible}/>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-  {skills.map((skill, index) => (
-    <div key={index} className="p-2 sm:w-1/2 w-full hover:scale-110 transform ">
-      <div className="bg-indigo-950 rounded flex p-4 h-full items-center">
-      <BsCheck2Circle className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-        <div className="flex-grow"> 
-          <span className="title-font font-medium text-white">{skill.skill}</span>
-        </div>
-        <div className="flex-shrink-0 flex items-center"> 
-          <span className="mr-4 text-white text-2xl">{skill.icon}</span>
-  
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
-        
-      </div>
-    </section>
-    )
-}
+      </section>
+    </AnimationScrollHandler>
+  );
+};
 
-export default Skills
+export default Skills;

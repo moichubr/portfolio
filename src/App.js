@@ -1,28 +1,25 @@
-import React, {Suspense} from 'react'; //suspense: para que la app cargue antes de renderizarse
+import {Suspense} from 'react'; //suspense: para que la app cargue antes de renderizarse
 import './App.css';
-import Landing from './Components/Landing';
-import Navbar from './Components/Navbar'
-import Projects from './Components/Projects';
-import Skills from './Components/Skills'
-import Contact from './Components/Contact'
-import Certificates from './Components/Certificates';
-import Footer from './Components/Footer'
+import Home from './Components/Home';
+import {Route, Routes, useLocation} from "react-router-dom"
+import Navigation from './Components/Navigation';
 
 
 function App() {
+const location = useLocation()
 
   return (
+    <>
+    {location.pathname === "/" && (
+        <Navigation />
+      )}
+
     <Suspense fallback="loading...">
-    <div className="App md:max-w-full lg:max-w-full max-w-full">
-      <Navbar />
-      <Landing />
-      <Skills />
-      <Projects />
-      <Certificates />
-      <Contact />
-      <Footer />
-    </div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
     </Suspense>
+    </>
   );
 }
 

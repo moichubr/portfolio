@@ -2,52 +2,89 @@
     "navbar": {
         "op1": "PROYECTOS",
         "op2": "TECNOLOGÍAS",
-        "op3": "CERTIFICADOS",
-        "op4": "Contactame"
+        "op3": "CERTIFICACIONES",
+        "op4": "CONTACTAME",
+        "op5": "SERVICIOS",
+        "op6": "SOBRE MI",
+        "op7": "DISEÑOS"
     },
     "about": {
-        "welcome": "Te doy la bienvenida!",
-        "iam": "Soy Moira Brun",
-        "role": "Desarrolladora Web Full Stack",
-        "description": "Creo softwares que no solo cumplen con los objetivos del negocio, sino que también mejoran la experiencia del usuario. Mi enfoque abarca tanto las tecnologías de frontend como de backend, permitiéndome crear soluciones completas, efectivas y eficientes. Estoy comprometida en construir aplicaciones que aporten un valor real y duradero. Llevemos ideas a la vida digital y hagamos que destaquen!",
-        "button1": "Coordina una entrevista",
-        "button2": "Mira mis proyectos"
+        "welcome": "Hola!",
+        "iam": "Soy",
+        "role": "Desarrolladora Frontend",
+        "description": "Con formación en desarrollo FullStack, me he perfeccionado en el desarrollo Frontend y diseño de interfaces user-friendly.",
+        "button1": "Contactame",
+        "button2": "Descargar CV",
+        "title": "SOBRE MI",
+        "descripcion": "Quién soy",
+        "text": "¡Hola! Mi nombre es Moira Brun, soy desarrolladora FullStack ubicada en Argentina. Soy capaz de colaborar en todas las áreas del desarrollo, sin embargo, el desarrollo Frontend y el diseño de interfaces son mi gran pasión.\nCon una combinación de experiencia trabajando tanto de forma autónoma como dentro de equipos ágiles, he acumulado una amplia comprensión del proceso de desarrollo. A lo largo de mi carrera, he perfeccionado mis habilidades a través de proyectos reales y diferentes colaboraciones académicas.\nMe perfilo como una profesional proactiva, dedicada, resiliente, creativa y empática. Abordo cada proyecto con tenacidad y mentalidad de crecimiento y colaboración. Creo en el poder de la colaboración y la importancia del aprendizaje continuo. Mi objetivo no es sólo contribuir con mi expertise a proyectos interesantes, sino también aprender de cada experiencia, mejorando mi oficio a lo largo del camino.",
+        "text2": "Cuando no estoy programando disfruto de hacer actividades al aire libre. También me gusta cocinar y entrenar."
         },
     "projects":{
-            "title": "Proyectos",
-            "description":"En esta sección se encuentran algunos de mis principales proyectos. Algunos de ellos desarrollé de manera full stack, y otros fueron en colaboración con colegas en un marco de trabajo Agile aplicando SCRUM. En los proyectos me gusta involucrarme al 100% para conseguir aportar valor tanto al negocio/objetivo como al usuario, teniendo muy presente las necesidades de ambas partes durante el proceso para lograr buenos resultados.",
-            "stack":"Stack de tecnologías:"
+            "title": "TRABAJOS",
+            "description":"Proyectos",
+            "stack":"TECH STACK"
+    },
+    "services":{
+        "title": "MIS SERVICIOS",
+        "descripcion": "Qué puedo hacer",
+       "1":{
+           
+           "title":"Diseño Creativo",
+           "descripcion":"Interpretación, maquetado y diseño UI de interfaces web y móviles."
+       },
+       "2":{
+        "title": "Desarrollo Web",
+        "descripcion": "Transformar diseños en aplicaciones/sitios webs atractivos y funcionales."
+       },
+       "3":{
+        "title": "Desarrollo Nativo",
+        "descripcion": "Transformar diseños en aplicaciones móviles atractivas y funcionales."
+       },
+       "4":{
+        "title": "Diseño Responsivo",
+        "descripcion": "Adaptar diseños para la correcta visualización de información en distintos dispositivos."
+       },
+       "5":{
+        "title": "Clean Code",
+        "descripcion": "Incorporación de las mejores prácticas de desarrollo frontend."
+       }
+
     },
     "skills":{
-        "title":"Habilidades & Tecnologías",
-        "description":"Me siento mas a gusto trabajando con las tecnologías detalladas a continuación, pero debido a mi curiosidad e interés por continuar aprendiendo busco potenciar y mejorar mis habilidades desarrollando e investigando también sobre nuevas tecnologías de software para lograr mejores productos y soluciones de calidad."
+        "title":"STACK TECNOLÓGICO",
+        "description":"Herramientas & Tecnologías"
     },
     "certificates":{
-        "title":"Certificados"
+        "title":"Certificaciones"
     },
     "contact":{
-        "title":"Ponte en contacto",
-        "description":"Estoy ansiosa por conversar contigo y determinar cómo puedo contribuir a tu proyecto. ¡No dudes en contactarme!",
+        "title":"¡Vamos a trabajar juntos!",
+        "description":"Quiero escuchar tu idea y averiguar cómo podemos trabajar juntos! Puedes encontrarme en mis redes sociales o enviarme un email justo aquí.",
         "name":"Nombre",
         "message":"Mensaje",
-        "location":"UBICADA EN",
         "button":"Enviar mensaje"
     },
     "footer":{
         "title": "Copyright © 2023"
     },
-    "projectsdata":{
-        "1":{
-            "description":" Landing page para una empresa agrícola con el objetivo de fortalecer su presencia digital. La arquitectura de la información esta orientada a brindar una experiencia de usuario clara y sencilla, comunicando los servicios que se ofrecen y el valor agregado de la empresa, haciendo hincapié en generar un proceso de contacto rápido y personalizado entre el visitante y la empresa a través de whatsapp."
+    "projectsdata":
+        {
+        "1": {
+            "description":"Proyecto para digitalizar el mundo ecuestre consistente en un panel de gestión web para usuarios administradores y una app móvil para distintos perfiles de usuario."
         },
         "2":{
-            "description":"Esta innovadora plataforma de e-commerce conecta a los viajeros con una agencia de viajes que ofrece paquetes turísticos personalizados y actividades. El admin dashboard es un plus que busca simplificar y potenciar el negocio. Esta pensada para mejorar la experiencia de compra del usuario y darle al admin muy buenas herramientas de gestion."
+            "description":"Landing page para una empresa agrícola con el objetivo de fortalecer su presencia digital comunicando los servicios que se ofrecen y el valor agregado de la empresa."
         },
         "3":{
-            "description":"Esta útil aplicación, completamente responsiva, funciona como un libro de recetas donde el usuario va a encontrar más de 100 recetas, puede crear sus propias recetas y eliminarlas si lo desea. Además, puede buscar una receta por su nombre o por palabra clave, filtrarlas por tipo de dieta y ordenarlas alfabéticamente o por puntuación de salud."
+            "description":"Proyecto académico grupal. Esta innovadora plataforma de e-commerce conecta a los viajeros con una agencia de viajes que ofrece paquetes turísticos personalizados y actividades. Esta pensada para mejorar la experiencia de compra del usuario y darle al administrador muy buenas herramientas de gestion."
         },
         "4":{
-            "description":"Este es un proyecto académico que desarrollé para aplicar todas las tecnologías aprendidas durante el bootcamp como JavaScript, React, Redux, CSS3, HTML, Express, Sequelize, PostgreSQL. En esta aplicación el usuario puede loguearse y buscar y filtrar más de 750 personajes de la serie Rick y Morty, guardar sus favoritos y eliminarlos si lo desea."
+            "description":"Proyecto académico individual, completamente responsivo, funciona como un libro de recetas donde el usuario va a encontrar más de 100 recetas, puede crear sus propias recetas y eliminarlas si lo desea. Además, puede buscar recetas, filtrarlas y ordenarlas alfabéticamente o por nivel saludable."
+        },
+        "5":{
+            "description":"Proyecto académico donde el usuario puede loguearse, buscar y filtrar más de 750 personajes de la serie Rick y Morty, guardar sus favoritos y eliminarlos si lo desea."
         }
     }
 }
+

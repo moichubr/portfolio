@@ -1,108 +1,76 @@
 import React from "react";
-
-import { HiArrowNarrowRight } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
-import { FaGithub, FaFileDownload } from "react-icons/fa";
-import { AiFillLinkedin } from "react-icons/ai";
-
-// import i18n from "../i18n";
+import profile_picture from "../assets/profile_picture.png";
+import LanguageButtons from "./Reusable/LanguageButtons";
 
 const Navbar = () => {
-  const { i18n, t } = useTranslation("global");
-  // const [isSpanish, setIsSpanish] = useState(false);
-
-
-  // console.log(i18n);
-
-  function changeGitHub() {
-    window.location.href = "https://github.com/moichubr";
-  }
-
-  function changeLinkdIn() {
-    window.location.href = "https://www.linkedin.com/in/moira-brun/";
-  }
-
-  function changeResume() {
-    i18n.languages[0] === 'es'
-      ? (window.location.href =
-          "https://drive.google.com/file/d/12zgkUVKuYfKGjw2072VbvV_jHxgm8N_a/view?usp=sharing")
-      : (window.location.href =
-          "https://drive.google.com/file/d/1dtn6aIJYudobg5kiTUd5_2R4fyj-rDgp/view?usp=sharing");
-  }
+  const { t } = useTranslation("global");
 
   return (
-    <header className="bg-indigo-950 sticky top-0 z-10">
-      <div className="container relative mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center max-w-full">
+    <nav className="w-full fixed top-0 z-50 pl-32 pr-6 bg-[#E9E2DC]">
+      <div
+        className="border-b-2"
+        style={{
+          position: "absolute",
+          left: 0,
+          bottom: 0,
+          width: "100%",
+          height: "2px",
+          backgroundImage: "linear-gradient(90deg, #240046, #ff0072, #FFC296)",
+          animation: "moveShine 3s linear infinite",
+        }}
+      ></div>
+      <div className="container relative mx-auto flex flex-wrap p-4 flex-row items-center max-w-full ">
         <a
           href="#about"
-          className="ml-3 text-xl title-font font-medium text-white mb-4 md:mb-0"
+          className=" text-xl title-font font-medium text-white hover:animate-bounce w-[5%] mr-8"
         >
-          Moira Brun
+          <img
+            src={profile_picture}
+            alt="Moira Brun"
+            className="w-full h-auto rounded-full"
+          />
         </a>
 
-        <nav className=" md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-          <a href="#projects" className="mr-5 text-white hover:font-bold hover:border hover:border-slate-100 rounded-xl py-2 px-4">
-            {t("navbar.op1")}
+        <section className="ml-4  border-l	flex flex-wrap items-center text-base justify-center  gap-6  w-[70%]">
+          <span className="px-4"></span>
+          <a
+            href="#about"
+            className=" text-[#9287AB] poppins-regular tracking-wide text-[14px] hover:font-semibold hover:border-b-2 hover:border-b-[#9287AB] py-1.5 px-3"
+          >
+            {t("navbar.op6")}
           </a>
-          <a href="#skills" className="mr-5 text-white hover:font-bold hover:border hover:border-slate-100 rounded-xl py-2 px-4">
+          <a
+            href="#services"
+            className=" text-[#9287AB] poppins-regular tracking-wide text-[14px] hover:font-semibold hover:border-b-2 hover:border-b-[#9287AB] py-1.5 px-3"
+          >
+            {t("navbar.op5")}
+          </a>
+          <a
+            href="#skills"
+            className=" text-[#9287AB] poppins-regular tracking-wide text-[14px] hover:font-semibold hover:border-b-2 hover:border-b-[#9287AB] py-1.5 px-3"
+          >
             {t("navbar.op2")}
           </a>
-          <a href="#certificates" className="mr-5 text-white hover:font-bold hover:border hover:border-slate-100 rounded-xl py-2 px-4">
-            {t("navbar.op3")}
-          </a>
-        </nav>
-        {/* flex flex-col md:flex-row items-end md:items-center */}
-        
-        <div className="flex flex-col sm:flex-row items-end md:items-center md:ml-4 md:text-center lg:ml-auto md:mr-4">
-         <div className="flex items-center">
-          <div className="text-white mr-4 mt-4 lg:mt-0">
-            <button onClick={changeGitHub} className="hover:bg-gray-600 hover:opacity-90 hover:rounded-full p-3 trasform" title="GitHub">
-              <FaGithub size={25} />
-            </button>
-            <button onClick={changeLinkdIn} className="hover:bg-gray-600 hover:opacity-90 hover:rounded-full p-3 trasform" title="LinkedIn">
-              <AiFillLinkedin size={25} />
-            </button>
-            <button onClick={changeResume} className="hover:bg-gray-600 hover:opacity-90 hover:rounded-full p-3 transform" title="Resume">
-              <FaFileDownload size={25} />
-            </button>
-          </div>
-
           <a
-            href="#contact"
-            className="inline-flex items-center bg-green-500 text-white border-0 py-1 px-3 focus:outline-none hover:bg-green-600 rounded text-base mt-4 md:mt-0 md:ml-auto mr-0 justify-end"
+            href="#projects"
+            className=" text-[#9287AB] poppins-regular tracking-wide text-[14px] hover:font-semibold hover:border-b-2 hover:border-b-[#9287AB] py-1.5 px-3"
           >
-            {t("navbar.op4")}
-            <HiArrowNarrowRight className="w-4 h-4 ml-1" />
+            {t("navbar.op1")}
           </a>
-          </div>
+          {/* <a href="#certificates" className=" text-[#9287AB] poppins-regular tracking-wide text-[14px] hover:font-semibold hover:border-b-2 hover:border-b-[#9287AB] py-1.5 px-3">
+            {t("navbar.op3")}
+          </a> */}
+        </section>
+        {/* flex flex-col md:flex-row items-end md:items-center */}
 
-
-          <div className="md:w-auto w-full mx-auto md:text-center lg:ml-4 ">
-            <div className="md:flex md:space-x-1 space-y-2 md:space-y-0">
-              <button
-                className="text-white m-1 text-base hover:bg-gray-600 hover:opacity-90 hover:rounded-full p-3 trasform"
-                onClick={() => {
-                  i18n.changeLanguage("en");
-                }}
-                title="English"
-              >
-                EN
-              </button>
-              <span className="text-white"> </span>
-              <button
-                className="text-white m-1 text-base hover:bg-gray-600 hover:opacity-90 hover:rounded-full p-3 trasform"
-                onClick={() => {
-                  i18n.changeLanguage("es");
-                }}
-                title="Español"
-              >
-                ES
-              </button>
-            </div>
+        <div className="flex flex-col sm:flex-row items-end md:items-center md:ml-4 md:text-center lg:ml-auto md:mr-4">
+          <div className="w-auto mx-auto text-center ml-4 ">
+            <LanguageButtons />
           </div>
         </div>
       </div>
-    </header>
+    </nav>
   );
 };
 

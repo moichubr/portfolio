@@ -14,7 +14,7 @@ const Certificates = () => {
         
       
             
-        <div className="lg:flex-row lg:justify-evenly lg:w-1/2 lg:mx-auto flex flex-col lg:items-center w-full lg:pt-10">
+        <div className="lg:flex-row lg:justify-evenly lg:w-[3/4] lg:mx-auto flex flex-col lg:items-center w-full lg:pt-10">
   
     {certificates?.map((cert) => {
       return (

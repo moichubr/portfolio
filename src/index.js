@@ -7,6 +7,7 @@ import {I18nextProvider} from "react-i18next"; //para que las traducciones esten
 import i18next from "i18next";
 import global_es from "./Translations/es/global.json"
 import global_en from "./Translations/en/global.json"
+import { BrowserRouter } from "react-router-dom";
 
 i18next.init({
   interpolation: {escapeValue:false},
@@ -25,9 +26,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   
     <React.StrictMode>
+      <BrowserRouter>
       <I18nextProvider i18n={i18next}>
       <App />
       </I18nextProvider>
+      </BrowserRouter>
     </React.StrictMode>
 
 );

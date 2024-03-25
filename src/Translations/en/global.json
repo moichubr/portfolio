@@ -1,33 +1,68 @@
 {
     "navbar": {
         "op1": "PROJECTS",
-        "op2": "SKILLS",
-        "op3": "CERTIFICATES",
-        "op4": "Contact me!"
+        "op2": "TECH STACK",
+        "op3": "CERTIFICATIONS",
+        "op4": "CONTACT ME",
+        "op5": "SERVICES",
+        "op6": "ABOUT",
+        "op7": "DESIGNS"
     },
     "about": {
-        "welcome": "Welcome!",
-        "iam": "I'm Moira Brun",
-        "role": "Full Stack web developer",
-        "description": "I create software that not only meets business objectives but also enhances the user experience. My focus encompasses both frontend and backend technologies, allowing me to create comprehensive, effective, and efficient solutions. I am committed to building applications that provide real and lasting value. Let's bring ideas to digital life and make them stand out!",
-        "button1": "Coordinate a meeting",
-        "button2": "Take a look at my projects"
+        "welcome": "Hi there!",
+        "iam": "I am",
+        "role": "Frontend Developer",
+        "description": "With knowledge in full-stack development, I have specialized in frontend development and user-friendly interface design.",
+        "button1": "Contact me",
+        "button2": "Download Resume",
+        "title": "ABOUT ME",
+        "descripcion": "Who am I",
+        "text": "Hello! My name is Moira Brun, I am a FullStack developer based in Argentina. I am able to collaborate in all areas of development, however, Frontend development and interface design are my great passion.\nWith a blend of experience working both autonomously and within agile teams, I've accumulated a rich understanding of the development process. Over my caree, I've honed my skills through real projects and different academic collaborations.\nI profile myself as a proactive, dedicated, resilient, creative, and empathetic professional. I approach each project with tenacity and a growth and collaborative mindset. I believe in the power of collaboration and the importance of continuous learning. My goal is not only to contribute my expertise to exciting projects but also to learn from each experience, improving my craft along the way.",
+        "text2": "When I am not programming, I enjoy outdoor activities. I also love cooking and training."
     },
     "projects":{
-        "title": "Projects",
-        "description":"This section showcases some of my key projects. Some of them I developed as a full-stack effort, while others were done in collaboration with colleagues within an Agile framework, applying SCRUM. I enjoy fully engaging in projects to deliver value to both the business objective and the user, keeping the needs of both parties in mind throughout the process to achieve positive outcomes.",
-        "stack":"Technologies stack:"
+        "title": "WORK",
+        "description":"Projects",
+        "stack":"TECH STACK"
     },
+    "services":{
+        "title": "MY SERVICES",
+        "descripcion": "What can I do",
+        "1":{
+            
+            "title":"Creative Design",
+            "descripcion":"Interpretation, layout, and UI design of web and mobile interfaces."
+        },
+        "2":{
+         "title": "Web Development",
+         "descripcion": "Transform designs into atractive and functional web interfaces."
+        },
+        "3":{
+            "title": "Native Development",
+            "descripcion": "Transform designs into atractive and functional mobile apps."
+           },
+        "4":{
+         "title": "Responsive Design",
+         "descripcion": "Interface design adaptation for an organized information display on multiple devices."
+        },
+        "5":{
+         "title": "Clean Code",
+         "descripcion": "Implement the best frontend development practices."
+        }
+        
+ 
+     },
     "skills":{
-        "title":"Skills & Technologies",
-        "description":"I feel most comfortable working with the technologies listed below, but due to my curiosity and interest in ongoing learning, I strive to enhance and improve my skills by developing and researching new software technologies as well, aiming to create better products and high-quality solutions."
+        "title":"TECH STACK",
+        "description":"Tools & Technologies"
     },
     "certificates":{
-        "title":"Certificates"
+        "title":"CERTIFICATIONS",
+        "description":""
     },
     "contact":{
-        "title":"Get in touch",
-        "description":"I'm eager to talk to you and determine how I can contribute to your project. Don't hesitate to contact me!",
+        "title":"Lets work together!",
+        "description":"I want to hear your idea and find out how we can work together! You can find me on my social media or send me an email right here.",
         "name":"Name",
         "message":"Message",
         "location":"BASED IN",
@@ -38,16 +73,19 @@
     },
     "projectsdata":{
         "1":{
-            "description":"A Landing Page for an agricultural company with the goal of bolstering its digital presence. The information architecture is geared towards providing a clear and straightforward user experience, communicating the services offered and the company's added value, with a focus on facilitating a swift and personalized contact process between the visitor and the company via WhatsApp."
+            "description":"Project to digitize the equestrian world consisting of a web management panel for administrators and a mobile app for different user profiles."
         },
         "2":{
-            "description":"This innovative e-commerce platform connects travelers with a travel agency that provides personalized travel packages and activities. The admin dashboard is a valuable addition designed to streamline and enhance the business. It is crafted to improve the user shopping experience and provide the admin with excellent management tools."
+            "description":"Landing page for an agricultural company with the aim of strengthening its digital presence by communicating the services offered and the added value of the company."
         },
         "3":{
-            "description":"This handy, fully responsive application functions like a recipe book, where the user can discover over 100 recipes, create their own recipes, and delete them if desired. Furthermore, users can search for a recipe by its name or keyword, filter them by dietary type, and sort them alphabetically or by health rating."
+            "description":"This innovative e-commerce platform connects travelers with a travel agency that provides personalized travel packages and activities. It is crafted to improve the user shopping experience and provide the admin with excellent management tools."
         },
         "4":{
-            "description":"This is an academic project I developed to apply all the technologies learned during the bootcamp, such as React, Redux, CSS3, Express, Sequelize, and PostgreSQL. In this application, users can log in, search and filter over 750 characters from the Rick and Morty series, save their favorites, and delete them if desired."
+            "description":"Individual academic project. It's fully responsive and functions like a recipe book, where the user can discover over 100 recipes, create their own recipes, and delete them if desired. Furthermore, users can search for recipes, filter and sort them alphabetically or by health rating."
+        },
+        "5":{
+            "description":"Academic project where users can log in, search and filter over 750 characters from the Rick and Morty series, save their favorites, and delete them if desired."
         }
     }
 
