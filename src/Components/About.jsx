@@ -52,7 +52,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="flex lg:flex-row xl:flex-row flex-col items-start w-full h-auto sm:py-8 lg:py-8 lg:gap-6 gap-4">
+        <div className="flex lg:flex-row xl:flex-row flex-col lg:items-start sm:items-center w-full h-auto sm:py-8 lg:py-8 lg:gap-6 gap-4">
           {/* derecha */}
           <div
             className={`${
