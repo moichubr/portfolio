@@ -142,7 +142,7 @@ const HamburgerMenu = () => {
           </a>
         </li>
 
-        <li className="p-2 ">
+        {/* <li className="p-2 ">
           <a
             href="#design"
             className={`text-white px-2 pb-2 leading-loose hover:scale-90 transform tracking-wide ${
@@ -153,7 +153,7 @@ const HamburgerMenu = () => {
           >
             {t("navbar.op7")}
           </a>
-        </li>
+        </li> */}
 
         {/* <li className="p-2">
           <a

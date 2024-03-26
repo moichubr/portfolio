@@ -9,7 +9,7 @@ const {t} = useTranslation("global")
 
   return (
     <div className="md:grid md:grid-cols-2  md:max-h-screen lg:grid lg:grid-cols-2 xl:grid xl:grid-cols-2 flex flex-col h-auto lg:max-h-screen xl:max-h-screen w-full">
-      <section className="lg:col-span-1 md:col-span-1 xl:col-span-1 lg:order-1 xl:order-1 flex flex-col relative sm:p-4 md:p-0 lg:p-4 justify-end sm:pb-16 md:pb-36 lg:pb-20 md:ml-[10%] lg:ml-40 xl:ml-40 h-[100vh] ">
+      <section className="lg:col-span-1 md:col-span-1 xl:col-span-1 lg:order-1 xl:order-1 flex flex-col relative sm:p-4 md:p-0 lg:p-4 justify-end sm:pb-[20%] md:pb-[40%] lg:pb-[15%] md:ml-[10%] lg:ml-40 xl:ml-40 h-[100vh] ">
         {/* Contenido del texto */}
         <div >
         <p className="animate-fade-up animate-duration-[2000ms] poppins-bold text-6xl md:text-[6rem] lg:text-[6rem] xl:text-[6rem] text-slate-50 max-w-[50%] lg:h-[7rem] md:h-[7rem] h-[5.5rem] leading-0">Moira</p>

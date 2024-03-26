@@ -15,7 +15,7 @@ const Services = () => {
         id="services"
         className=" flex flex-col h-auto max-h-auto w-full max-w-full lg:px-48 xl:px-48 md:px-24 px-4 pt-3 pb-8"
       >
-        <div className={`${isVisible ? 'animate-fade-right animate-duration-1000' : ''}flex flex-col mt-20  w-full`}>
+        <div className={`${isVisible ? 'animate-fade-right animate-duration-[2000ms]' : ''}flex flex-col mt-20  w-full`}>
           <div className="flex flex-row gap-3 items-center ">
             <span className="bg-pink-700 w-[20px] h-1"></span>{" "}
             <span className="text-pink-900 roboto-regular font-semibold text-md tracking-wide">

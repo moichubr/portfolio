@@ -99,7 +99,7 @@ const Contact = () => {
           <input
             type="hidden"
             name="_next"
-            value="https://moirabrun.netlify.app/successSubmition"
+            value="https://moirabrun.netlify.app"
           />
           <input type="hidden" name="_captcha" value="false" />
         </form>
