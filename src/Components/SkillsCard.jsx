@@ -3,7 +3,7 @@ const SkillsCard = ({ skill, isVisible }) => {
 
   return (
     
-    <article className={`${isVisible ? 'animate-flip-up animate-ease-in animate-duration-[2000ms]' : ''} bg-pink-950 bg-opacity-30 w-[40%] md:w-[20%] lg:w-[13%] h-auto rounded-tl-[16px] pt-4 pl-5 shadow-md `}>
+    <article className={`${isVisible ? 'animate-flip-up animate-ease-in animate-duration-[2000ms]' : ''} bg-pink-950 bg-opacity-30 dark:bg-pink-400 dark:bg-opacity-10 w-[40%] md:w-[20%] lg:w-[13%] h-auto rounded-tl-[16px] pt-4 pl-5 shadow-md `}>
       <p className="poppins-regular text-sm text-white tracking-wide">
         {skill.skill}
       </p>

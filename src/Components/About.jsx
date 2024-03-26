@@ -42,12 +42,12 @@ const About = () => {
           } flex flex-col mt-20  w-full`}
         >
           <div className="flex flex-row gap-3 items-center">
-            <span className="bg-pink-700 w-[20px] h-1"></span>{" "}
-            <span className="text-pink-900 roboto-regular font-semibold text-md tracking-wide">
+            <span className="bg-pink-700 dark:bg-pink-500 w-[20px] h-1"></span>{" "}
+            <span className="text-pink-900 dark:text-pink-700 roboto-regular font-semibold text-md tracking-wide">
               {t("about.title")}
             </span>
           </div>
-          <p className="text-pink-900 roboto-regular font-semibold text-2xl tracking-wide ">
+          <p className="text-pink-900 dark:text-pink-700 roboto-regular font-semibold text-2xl tracking-wide ">
             {t("about.descripcion")}
           </p>
         </div>
@@ -63,19 +63,19 @@ const About = () => {
               return (
                 <p
                   index={i}
-                  className="text-sm poppins-regular text-gray-700 text-justify leading-6"
+                  className="text-sm poppins-regular text-gray-700 dark:text-gray-500 text-justify leading-6"
                 >
                   {paragraph}
                 </p>
               );
             })}
-            <p className="text-sm poppins-regular text-gray-700 text-justify leading-6">
+            <p className="text-sm poppins-regular text-gray-700 dark:text-gray-500 text-justify leading-6">
               {t("about.text2")}
             </p>
             <div className="flex md:flex-row flex-col w-full gap-3 items-center justify-center mt-8">
               <button
                 onClick={changeResume}
-                className="border border-pink-900 bg-white flex flex-row justify-center gap-3 rounded px-3 py-2 poppins-regular text-pink-900 font-semibold lg:w-[50%] xl:w-[50%] w-full hover:translate-y-2"
+                className="border border-pink-900 dark:border-pink-700 bg-white dark:bg-transparent flex flex-row justify-center gap-3 rounded px-3 py-2 poppins-regular text-pink-900 dark:text-pink-700 font-semibold lg:w-[50%] xl:w-[50%] w-full hover:translate-y-2"
                 title="Resumen"
               >
                 {t("about.button2")}

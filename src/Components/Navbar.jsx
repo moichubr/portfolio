@@ -2,14 +2,15 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import profile_picture from "../assets/profile_picture.png";
 import LanguageButtons from "./Reusable/LanguageButtons";
+import ToggleSwitch from "./Reusable/ToggleSwitch";
 
-const Navbar = () => {
+const Navbar = ({toggleDarkMode}) => {
   const { t } = useTranslation("global");
 
   return (
-    <nav className="w-full fixed top-0 z-50 pl-32 pr-6 bg-[#E9E2DC]">
+    <nav className="w-full fixed top-0 z-50 pl-32 pr-6  bg-[#E9E2DC] dark:bg-[#0e1118]">
       <div
-        className="border-b-2"
+        className="border-b-2 dark:border-none"
         style={{
           position: "absolute",
           left: 0,
@@ -68,8 +69,12 @@ const Navbar = () => {
           <div className="w-auto mx-auto text-center ml-4 ">
             <LanguageButtons />
           </div>
+            <ToggleSwitch toggleDarkMode={toggleDarkMode}/>
+          
         </div>
+       
       </div>
+      
     </nav>
   );
 };

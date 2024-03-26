@@ -3,8 +3,9 @@ import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import profile_picture from "../assets/profile_picture.png";
 import LanguageButtons from "./Reusable/LanguageButtons";
+import ToggleSwitch from "./Reusable/ToggleSwitch";
 
-const HamburgerMenu = () => {
+const HamburgerMenu = ({toggleDarkMode}) => {
   const location = useLocation();
   const currentPath = location.hash;
   const menuRef = useRef(null)
@@ -37,7 +38,7 @@ const HamburgerMenu = () => {
   return (
     <nav
     ref={menuRef}
-    className="fixed top-[-1px] z-50 w-100vw flex flex-row justify-between items-center p-4 md:px-14 bg-[#88c29e] border-t border-t-[#88c29e]">
+    className="fixed top-[-1px] z-50 w-100vw flex flex-row justify-between items-center p-4 md:px-14 bg-[#88c29e] dark:bg-[#0e1118] border-t border-t-[#88c29e]">
       <img
         src={profile_picture}
         alt="Moira Brun"
@@ -87,7 +88,7 @@ const HamburgerMenu = () => {
        
         className={`menu-items ${
           isOpen ? "block" : "hidden"
-        } sm:w-[48%] md:w-[35%] h-[100vh] max-h-[100vh] z-100 absolute top-[100%] border right-0 bg-[#88c29e] rounded rounded-l-3xl  list-none p-4 m-0 transition-opacity ${
+        } sm:w-[48%] md:w-[35%] h-[100vh] max-h-[100vh] z-100 absolute top-[100%] border right-0 bg-[#88c29e] dark:bg-[#0e1118] dark:border-gray-800 rounded rounded-l-3xl  list-none p-4 m-0 transition-opacity ${
           isOpen ? "opacity-100" : "opacity-0"
         } duration-500`}
       >
@@ -182,8 +183,9 @@ const HamburgerMenu = () => {
           </a>
         </li>
       
-        <div className="mt-44 w-full px-5">
+        <div className="mt-44 w-full px-5 flex flex-col gap-4">
           <LanguageButtons />
+          <ToggleSwitch toggleDarkMode={toggleDarkMode}/>
         </div>
       </ul>
     </nav>

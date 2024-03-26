@@ -17,76 +17,76 @@ const Services = () => {
       >
         <div className={`${isVisible ? 'animate-fade-right animate-duration-[2000ms]' : ''}flex flex-col mt-20  w-full`}>
           <div className="flex flex-row gap-3 items-center ">
-            <span className="bg-pink-700 w-[20px] h-1"></span>{" "}
-            <span className="text-pink-900 roboto-regular font-semibold text-md tracking-wide">
+            <span className="bg-pink-700 dark:bg-pink-500 w-[20px] h-1"></span>{" "}
+            <span className="text-pink-900 dark:text-pink-700 roboto-regular font-semibold text-md tracking-wide">
               {t("services.title")}
             </span>
           </div>
-          <p className="text-pink-900 roboto-regular font-semibold text-2xl tracking-wide">
+          <p className="text-pink-900 dark:text-pink-700 roboto-regular font-semibold text-2xl tracking-wide">
             {t("services.descripcion")}
           </p>
         </div>
 
         <div className={` w-full h-auto bg-transparent flex flex-col gap-6 items-center justify-center mt-10 lg:mt-8`}>
           <article className={`${isVisible ? 'animate-flip-up animate-ease-in animate-duration-[2000ms]' : ''} flex lg:flex-row flex-col gap-6 justify-center items-center`}>
-            <div className="bg-orange-100 rounded-[10px] px-4 shadow-sm h-[200px] lg:w-[250px] xl:w-[250px] w-[90%] gap-3 py-5 text-center flex flex-col items-center justify-center border-r border-b">
+            <div className="bg-orange-100 dark:bg-gray-800 rounded-[10px] px-4 shadow-sm h-[200px] lg:w-[250px] xl:w-[250px] w-[90%] gap-3 py-5 text-center flex flex-col items-center justify-center border-r border-b dark:border-gray-700">
               <span className="flex justify-center mb-2">
                 <MdDesignServices color="orange" size={30} />
               </span>
-              <p className="poppins-regular text-lg font-semibold text-gray-700">
+              <p className="poppins-regular text-lg font-semibold text-gray-700 dark:text-slate-300 ">
                 {t("services.1.title")}
               </p>
-              <p className="poppins-regular text-sm text-gray-600 mt-4 max-w-[88%]">
+              <p className="poppins-regular text-sm text-gray-600 dark:text-slate-400 mt-4 max-w-[88%]">
                 {t("services.1.descripcion")}
               </p>
             </div>
 
-            <div className={`${isVisible ? 'animate-flip-up animate-ease-in animate-duration-[2000ms]' : ''} bg-pink-100 rounded-[10px] px-4 shadow-sm h-[200px] lg:w-[250px] xl:w-[250px] w-[90%] flex flex-col items-center justify-center gap-3 py-5 text-center border-r border-b`}>
+            <div className={`${isVisible ? 'animate-flip-up animate-ease-in animate-duration-[2000ms]' : ''} bg-pink-100 dark:bg-gray-800  rounded-[10px] px-4 shadow-sm h-[200px] lg:w-[250px] xl:w-[250px] w-[90%] flex flex-col items-center justify-center gap-3 py-5 text-center border-r border-b dark:border-gray-700`}>
               <span className="flex justify-center mb-2">
                 <FaLaptopCode color="pink" size={30} />
               </span>
-              <p className="poppins-regular text-lg font-semibold text-gray-700">
+              <p className="poppins-regular text-lg font-semibold text-gray-700 dark:text-slate-300 ">
                 {t("services.2.title")}
               </p>
-              <p className="poppins-regular text-sm text-gray-600 mt-4 max-w-[88%]">
+              <p className="poppins-regular text-sm text-gray-600 dark:text-slate-400  mt-4 max-w-[88%]">
                 {t("services.2.descripcion")}
               </p>
             </div>
 
-            <div className={`${isVisible ? 'animate-flip-up animate-ease-in animate-duration-[2000ms]' : ''} bg-violet-100 rounded-[10px] px-4 shadow-sm h-[200px] lg:w-[250px] xl:w-[250px] w-[90%]  gap-3 py-5 text-center flex flex-col items-center justify-center border-r border-b`}>
+            <div className={`${isVisible ? 'animate-flip-up animate-ease-in animate-duration-[2000ms]' : ''} bg-violet-100 dark:bg-gray-800  rounded-[10px] px-4 shadow-sm h-[200px] lg:w-[250px] xl:w-[250px] w-[90%]  gap-3 py-5 text-center flex flex-col items-center justify-center border-r border-b dark:border-gray-700`}>
               <span className="flex justify-center mb-2">
                 <FaMobileAlt color="violet" size={30} />
               </span>
-              <p className="poppins-regular text-lg font-semibold text-gray-700">
+              <p className="poppins-regular text-lg font-semibold text-gray-700 dark:text-slate-300 ">
                 {t("services.3.title")}
               </p>
-              <p className="poppins-regular text-sm text-gray-600 mt-4 md:max-w-[95%] lg:max-w-[88%] max-w-[88%]">
+              <p className="poppins-regular text-sm text-gray-600 dark:text-slate-400  mt-4 md:max-w-[95%] lg:max-w-[88%] max-w-[88%]">
                 {t("services.3.descripcion")}
               </p>
             </div>
           </article>
 
           <article className={`${isVisible ? 'animate-flip-up animate-ease-in animate-duration-[2000ms]' : ''} flex lg:flex-row flex-col gap-6 items-center justify-center  md:px-14 lg:px-0`}>
-            <div className="bg-indigo-100 rounded-[10px] px-4 shadow-sm h-[200px] lg:w-[250px] xl:w-[250px] w-[90%]  gap-3 py-5 text-center flex flex-col items-center justify-center border-r border-b">
+            <div className="bg-indigo-100 dark:bg-gray-800  rounded-[10px] px-4 shadow-sm h-[200px] lg:w-[250px] xl:w-[250px] w-[90%]  gap-3 py-5 text-center flex flex-col items-center justify-center border-r border-b dark:border-gray-700">
               <span className="flex justify-center mb-2">
                 <MdOutlineDevices color="indigo" size={30} />
               </span>
-              <p className="poppins-regular text-lg font-semibold text-gray-700">
+              <p className="poppins-regular text-lg font-semibold text-gray-700 dark:text-slate-300 ">
                 {t("services.4.title")}
               </p>
-              <p className="poppins-regular text-sm text-gray-600 mt-4 max-w-[95%]">
+              <p className="poppins-regular text-sm text-gray-600 dark:text-slate-400  mt-4 max-w-[95%]">
                 {t("services.4.descripcion")}
               </p>
             </div>
 
-            <div className={`${isVisible ? 'animate-flip-up animate-ease-in animate-duration-[2000ms]' : ''} bg-green-100 rounded-[10px] px-4 shadow-sm h-[200px] lg:w-[250px] xl:w-[250px] w-[90%] flex flex-col items-center justify-center gap-3 py-5 text-center border-r border-b`}>
+            <div className={`${isVisible ? 'animate-flip-up animate-ease-in animate-duration-[2000ms]' : ''} bg-green-100 dark:bg-gray-800  rounded-[10px] px-4 shadow-sm h-[200px] lg:w-[250px] xl:w-[250px] w-[90%] flex flex-col items-center justify-center gap-3 py-5 text-center border-r border-b dark:border-gray-700`}>
               <span className="flex justify-center mb-2">
                 <FaCode color="green" size={30} />
               </span>
-              <p className="poppins-regular text-lg font-semibold text-gray-700">
+              <p className="poppins-regular text-lg font-semibold text-gray-700 dark:text-slate-300 ">
                 {t("services.5.title")}
               </p>
-              <p className="poppins-regular text-sm text-gray-600 mt-4 max-w-[88%]">
+              <p className="poppins-regular text-sm text-gray-600 dark:text-slate-400  mt-4 max-w-[88%]">
                 {t("services.5.descripcion")}
               </p>
             </div>

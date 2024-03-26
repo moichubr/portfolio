@@ -18,12 +18,12 @@ const Skills = () => {
             }flex flex-col w-full pt-20`}
           >
             <div className="flex flex-row gap-3 items-center">
-              <span className="bg-pink-700 w-[20px] h-1"></span>{" "}
-              <span className="text-pink-900 roboto-regular font-semibold text-md tracking-wide">
+              <span className="bg-pink-700 dark:bg-pink-500 w-[20px] h-1"></span>{" "}
+              <span className="text-pink-900 dark:text-pink-700 roboto-regular font-semibold text-md tracking-wide">
                 {t("skills.title")}
               </span>
             </div>
-            <p className="text-pink-900 roboto-regular font-semibold text-2xl tracking-wide">
+            <p className="text-pink-900 dark:text-pink-700 roboto-regular font-semibold text-2xl tracking-wide">
               {t("skills.description")}
             </p>
           </div>

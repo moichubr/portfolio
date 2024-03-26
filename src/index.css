@@ -41,7 +41,18 @@ code {
   left: 5%; 
   text-align: left;
   max-width: fit-content;
+}
 
+.bg-body{
+  background: linear-gradient(to bottom, #0e1118, #1c2230)
+}
+
+.dark-bg{
+  background: linear-gradient(to bottom left, #4a5568, #0e1118, #0e1118 ); /* Establece el degradado para el modo oscuro */
+}
+
+.light-bg{
+  background: linear-gradient(to bottom, #f1f5fa, #fff)
 }
 
 

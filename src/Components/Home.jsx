@@ -11,7 +11,7 @@ const Home = () => {
     <main className="w-full h-screen flex flex-col scroll-smooth">
       <Landing />
 
-      <section className="bg-gradient-to-b from-slate-100  to-white">
+      <section className="light-bg dark:bg-body">
         <About />
 
         <Services />

@@ -2,7 +2,7 @@ import HamburgerMenu from "./HamburguerMenu";
 import Navbar from "./Navbar";
 import {useState, useEffect} from "react"
 
-const Navigation = () => {
+const Navigation = ({toggleDarkMode}) => {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
     useEffect(() => {
@@ -23,7 +23,7 @@ const Navigation = () => {
 
     return(
         <>
-        {isSmallScreen ? <HamburgerMenu /> : <Navbar />}
+        {isSmallScreen ? <HamburgerMenu toggleDarkMode={toggleDarkMode}/> : <Navbar toggleDarkMode={toggleDarkMode}/>}
       </>
     )
 }

@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-[#E9E2DC] flex lg:flex-row xl:flex-row flex-col h-auto max-h-auto w-full max-w-full md:px-24 lg:px-48 xl:px-48 px-4 lg:pt-20 xl:pt-20 pt-6 pb-14 lg:pb16 xl:pb-16 "
+      className="bg-[#E9E2DC] dark:dark-bg flex lg:flex-row xl:flex-row flex-col h-auto max-h-auto w-full max-w-full md:px-24 lg:px-48 xl:px-48 px-4 lg:pt-20 xl:pt-20 pt-6 pb-14 lg:pb16 xl:pb-16 "
     >
       <div className="py-10 flex flex-col lg:w-[50%] xl:w-[50%] w-full md:items-center lg:items-start">
         <h2
@@ -24,7 +24,7 @@ const Contact = () => {
         >
           {t("contact.title")}
         </h2>
-        <p className="text-gray-800 poppins-regular lg:mb-0 xl:mb-0 mb-3 md:max-w-[80%]  md:text-center lg:text-left lg:max-w-auto">
+        <p className="text-gray-800 dark:text-gray-500 poppins-regular lg:mb-0 xl:mb-0 mb-3 md:max-w-[80%]  md:text-center lg:text-left lg:max-w-auto">
           {t("contact.description")}
         </p>
         <RrssButtons />
