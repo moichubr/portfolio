@@ -5,6 +5,7 @@ import profile_picture from "../assets/profile_picture.png";
 import LanguageButtons from "./Reusable/LanguageButtons";
 import ToggleSwitch from "./Reusable/ToggleSwitch";
 
+
 const HamburgerMenu = ({toggleDarkMode}) => {
   const location = useLocation();
   const currentPath = location.hash;
@@ -185,7 +186,9 @@ const HamburgerMenu = ({toggleDarkMode}) => {
       
         <div className="mt-44 w-full px-5 flex flex-col gap-4">
           <LanguageButtons />
+         
           <ToggleSwitch toggleDarkMode={toggleDarkMode}/>
+        
         </div>
       </ul>
     </nav>
