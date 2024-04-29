@@ -12,11 +12,11 @@ const About = () => {
   function changeResume() {
     i18n.languages[0] === "es"
       ? window.open(
-          "https://drive.google.com/file/d/1H1lwav3EUvlQoHK2hfWBVNp97xvn2sut/view?usp=sharing",
+          "https://drive.google.com/file/d/1dQM1lT9x9XN31CKkZvBYp2fwi2WYHA7i/view?usp=sharing",
           "_blank"
         )
       : window.open(
-          "https://drive.google.com/file/d/1I0uwEikRqEKPI-sB-OvF6OvUl-z7roUm/view?usp=sharing",
+          "https://drive.google.com/file/d/1Jy_cwRoKOjGFlFArJikiVIoNNo69CfrU/view?usp=sharing",
           "_blank"
         );
   }
